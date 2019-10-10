@@ -1,0 +1,23 @@
+<header>
+    <div class="title">
+        Projects
+    </div>
+    <nav>
+
+    </nav>
+</header>
+
+<div class="project-wrapper" *ngFor="let project of projects">
+    <div class="collumn1">
+        <div class="project-header">
+            <a href="{{project.link}}">{{project.name}}</a>
+            <p>{{project.desc}}</p>
+        </div>
+        <img class="visual-screenshot-image" src="{{project.visualScreenshots[0]}}">
+    </div>
+    <div class="collumn2">
+        <h1>Skills</h1>
+        <p class="skill-breadcrumb" *ngFor="let skill of project.skills">{{skill}}</p>
+        <img class="visual-code-image" src="{{project.codeScreenshots[0]}}">
+    </div>
+</div>
