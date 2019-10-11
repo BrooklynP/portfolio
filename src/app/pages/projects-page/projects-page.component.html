@@ -10,7 +10,10 @@
 <div class="project-wrapper" *ngFor="let project of projects">
     <div class="collumn1">
         <div class="project-header">
-            <a href="{{project.link}}">{{project.name}}</a>
+            <div class="project-titlebar">
+                <a class="project-title" href="{{project.link}}">{{project.name}}</a>
+                <a *ngIf="project.githubLink" href="{{project.githubLink}}"><i class="fab fa-github"></i></a>
+            </div>
             <p>{{project.desc}}</p>
         </div>
         <img class="visual-screenshot-image" src="{{project.visualScreenshots[0]}}">

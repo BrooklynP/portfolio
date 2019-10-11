@@ -31,8 +31,12 @@ header{
 h1{
     color:#4AF626;
 }
-a{
+.project-title{
     color: #4AF626;
+    margin-right: 2vw;
+}
+i{
+    color: white;
 }
 p{
     color: white;
@@ -62,4 +66,9 @@ p{
 
 .skill-breadcrumb{
     margin-left: 2vw;
+}
+.project-titlebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
