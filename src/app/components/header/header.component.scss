@@ -1,0 +1,34 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 3vh;
+
+    width:100%;
+    height: 7vh;
+    background-color: #0B0B0D;
+}
+
+.navbar{
+    margin-top: 3vh;
+}
+
+.navbar-item{
+    color: #4AF626;
+    text-decoration: none;
+    font-size: 2vmin;
+    margin-left:3vw;
+}
+.navbar-item:hover{
+    color: white;
+}
+.social-navbar{
+    margin-top: 2vh;
+    margin-right: 2vw;
+}
+
+i{
+    font-size: 4vmin;
+    color: white;
+}

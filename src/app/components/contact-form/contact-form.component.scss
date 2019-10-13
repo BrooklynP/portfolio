@@ -1,0 +1,28 @@
+.contact-form{
+    display:flex;
+    flex-direction: column;
+
+    width: 40vw;
+
+    margin: 2vmin;
+
+    color: white;
+    text-align: center;
+}
+
+input{
+    text-align: center;
+    height: 5vh;
+    margin-bottom: 1vh;
+}
+
+a{
+    color:#4AF626;
+}
+h1{
+    color: #4AF626;
+}
+
+.message-box{
+    height: 20vh;
+}

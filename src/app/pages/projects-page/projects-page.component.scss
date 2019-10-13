@@ -9,25 +9,6 @@
     height: auto;;
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    margin-bottom: 3vh;
-
-    width:100%;
-    height: 7vh;
-    background-color: #0B0B0D;
-    color:#4AF626;
-}
-
-.title{
-    margin-left:3vw;
-    margin-top: 3vh;
-    font-size: 2vmin;
-}
-
 h1{
     color:#4AF626;
 }
@@ -35,9 +16,7 @@ h1{
     color: #4AF626;
     margin-right: 2vw;
 }
-i{
-    color: white;
-}
+
 p{
     color: white;
 }
@@ -60,15 +39,25 @@ p{
     margin-right: 2vw;
 }
 .collumn2{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
     width: 20vw;
 }
 
 .skill-breadcrumb{
-    margin-left: 2vw;
+    // margin-left: 2vw;
+    color: white;
+
 }
 .project-titlebar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.skills{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 }

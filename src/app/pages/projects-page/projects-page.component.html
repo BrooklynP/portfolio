@@ -1,11 +1,4 @@
-<header>
-    <div class="title">
-        Projects
-    </div>
-    <nav>
-
-    </nav>
-</header>
+<app-header></app-header>
 
 <div class="project-wrapper" *ngFor="let project of projects">
     <div class="collumn1">
@@ -19,8 +12,12 @@
         <img class="visual-screenshot-image" src="{{project.visualScreenshots[0]}}">
     </div>
     <div class="collumn2">
-        <h1>Skills</h1>
-        <p class="skill-breadcrumb" *ngFor="let skill of project.skills">{{skill}}</p>
+        <div>
+            <h1>Skills</h1>
+            <ul class="skills">
+                <li class="skill-breadcrumb" *ngFor="let skill of project.skills">{{skill}}</li>
+            </ul>
+        </div>
         <img class="visual-code-image" src="{{project.codeScreenshots[0]}}">
     </div>
 </div>
