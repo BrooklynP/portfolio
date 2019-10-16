@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
+import { Project } from 'src/app/models/project';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectsDataService {
-  public projects: Array<any> = [
+  public projects: Array<Project> = [
     {
       name: "Client Portal",
       link: "https://clientportal.a2it.dev/",
@@ -23,6 +24,18 @@ export class ProjectsDataService {
       skills: ["JavaScript", "TypeScript", "Angular", "HTTP", "HTML", "CSS"],
       visualScreenshots: ["/assets/project-screenshots/silentauction-visual-screenshot.PNG"],
       codeScreenshots: ["/assets/project-screenshots/silentauction-code-screenshot.PNG"]
+    },
+    {
+      name: "Birdfair Exhibitor List",
+      link: "https://birdfair.org.uk/exhibit/",
+      desc: `This project is an angular project that displays a list of exhbitors at the birdfair event,
+        that is then placed inside their wordpress site using an iframe.
+        I designed a mockup in adobe xd that then had to be approved by the client, before I then built the app.
+        I am quite proud of the search  features which allow you to search for an exhibitor by name,
+        and also filter by the area they are in.`,
+      skills: ["JavaScript", "TypeScript", "Angular", "HTTP", "HTML", "CSS"],
+      visualScreenshots: ["/assets/project-screenshots/birdfair-visual-screenshot.png"],
+      codeScreenshots: ["/assets/project-screenshots/birdfair-code-screenshot.png"]
     },
     {
       name: "Sprite Editor",
