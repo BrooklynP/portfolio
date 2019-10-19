@@ -19,6 +19,21 @@ export class SkillsDataService {
       name: 'C++'
     },
     {
+      name: 'Java'
+    },
+    {
+      name: 'Adobe XD'
+    },
+    {
+      name: 'Angular'
+    },
+    {
+      name: 'APIs'
+    },
+    {
+      name: 'WPF'
+    },
+    {
       name: 'Photoshop'
     },
   ];

@@ -73,7 +73,7 @@ export class ProjectsDataService {
       name: "Wordpress Site To Advertise My Silent Auction Software",
       link: "https://silentauctiontexting.com/",
       desc: `This was my first work with wordpress. I have created a site to advertise some software I made,
-      using photoshopped mockups and plugins. I also used yellow pencil to make the css exactly how I wanted it to look.`,
+      using photoshopped mockups and plugins. I also used yellow pencil in order to perfect the look with custom css`,
       skills: ["Worpress", "HTML", "CSS", "Photoshop", "SEO"],
       visualScreenshots: ["/assets/project-screenshots/silentauction-wordpress-visual-screenshot.PNG"],
       codeScreenshots: ["/assets/project-screenshots/silentauction-wordpress-code-screenshot.PNG"]
