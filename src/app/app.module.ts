@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { AboutComponent } from './pages/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { SingleProjectPageComponent } from './pages/single-project-page/single-project-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
     PageNotFoundComponent,
     AboutComponent,
     HeaderComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    SingleProjectPageComponent
   ],
   imports: [
     BrowserModule,

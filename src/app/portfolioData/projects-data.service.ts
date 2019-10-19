@@ -5,7 +5,10 @@ import { Project } from 'src/app/models/project';
   providedIn: 'root'
 })
 export class ProjectsDataService {
-  public projects: Array<Project> = [
+
+  static currentProject: Project;
+
+  private readonly projects: Array<Project> = [
     {
       name: "Client Portal",
       link: "https://clientportal.a2it.dev/",
@@ -79,7 +82,16 @@ export class ProjectsDataService {
 
   constructor() { }
 
-  public getProjects() {
+  public getProjects(): Array<Project> {
     return this.projects;
+  }
+
+  setCurrentProject(index: number) {
+    console.log(this.projects[index]);
+    ProjectsDataService.currentProject = this.projects[index];
+  }
+
+  getCurrentProject(): Project {
+    return ProjectsDataService.currentProject;
   }
 }
