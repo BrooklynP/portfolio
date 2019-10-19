@@ -25,10 +25,36 @@
     border-color: black;
     border-style: solid;
     border-width: 1px;
+
+}
+
+.filter-by-skills{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-bottom:2vh;
+}
+
+.skill-btn{
+    background-color: #25252B;
+    color: white;
+    border: none;
+
+    margin-right: 1vw;
+    margin-left: 1vw;
+
+    cursor: pointer;
+}
+
+.skill-btn:hover{
+    color: #4AF626;
 }
 
 .project-card-title{
     display: none;
+    margin: 0;
 }
 
 .project-card:hover .project-card-title{
