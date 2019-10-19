@@ -6,10 +6,23 @@ body{
     overflow-x: hidden;
 }
 
-h1{
+h1, a{
     color:#4AF626;
+    margin-right: 1vw;
 }
 
-p{
+h1{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+p, i, li{
     color: white;
+}
+
+i:hover{
+    color: #4AF626;
+}
+a:hover {
+    color:white;
 }

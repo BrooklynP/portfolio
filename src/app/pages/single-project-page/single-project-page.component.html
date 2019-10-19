@@ -1,23 +1,16 @@
 <app-header></app-header>
 
-<div class="project-wrapper">
-    <div class="collumn1">
-        <div class="project-header">
-            <div class="project-titlebar">
-                <a class="project-title" href="{{project.link}}">{{project.name}}</a>
-                <a *ngIf="project.githubLink" href="{{project.githubLink}}"><i class="fab fa-github"></i></a>
-            </div>
-            <p>{{project.desc}}</p>
-        </div>
-        <img class="visual-screenshot-image" src="{{project.visualScreenshots[0]}}">
-    </div>
-    <div class="collumn2">
-        <div>
-            <h1>Skills</h1>
-            <ul class="skills">
-                <li class="skill-breadcrumb" *ngFor="let skill of project.skills">{{skill}}</li>
-            </ul>
-        </div>
-        <img class="visual-code-image" src="{{project.codeScreenshots[0]}}">
-    </div>
-</div>
+<header>
+    <h1>{{project.name}}</h1>
+    <a *ngIf="project.link" href="{{project.link}}"><i class="fas fa-link"></i></a>
+    <a *ngIf="project.githubLink" href="{{project.githubLink}}"><i class="fab fa-github"></i></a>
+</header>
+
+<p>{{project.desc}}</p>
+
+<img class="visual-screenshot-image" src="{{project.visualScreenshots[0]}}">
+
+<ul class="skills-list">
+    <li class="skill-breadcrumb" *ngFor="let skill of project.skills">{{skill}}</li>
+</ul>
+<!-- <img class="code-screenshot-image" src="{{project.codeScreenshots[0]}}"> -->
