@@ -60,14 +60,14 @@ export class ProjectsDataService {
       codeScreenshots: ["/assets/project-screenshots/zombies-code-screenshot.PNG"]
     },
     {
-      name: "This Portfolio",
-      link: "localhost:4200",
-      githubLink: "https://github.com/BrooklynP/portfolio/",
-      desc: `My portfolio is a project I undertook myself to help display my work.
-      The biggest challenge of this project was making it pretty as I have not used a css framework`,
-      skills: ["Angular", "HTML", "CSS", "JavaScript", "TypeScript"],
-      visualScreenshots: ["/assets/project-screenshots/portfolio-visual-screenshot.PNG"],
-      codeScreenshots: ["/assets/project-screenshots/portfolio-code-screenshot.PNG"]
+      name: "Captive Portal for PFsense",
+      link: "",
+      desc: `This is a custom captive portal for one of our server racks to act as the default on-site.
+      It is free of company branding to make it as versatile as possible but still keeps an essence of the company identity.
+      It was created in pure HTML and CSS, while conforming to the PFsense spec for what a captive portal should be`,
+      skills: ["CSS", "HTML", "Photoshop"],
+      visualScreenshots: ["/assets/project-screenshots/captiveportal-visual-screenshot.png"],
+      codeScreenshots: []
     },
     {
       name: "Wordpress Site To Advertise My Silent Auction Software",
@@ -77,6 +77,26 @@ export class ProjectsDataService {
       skills: ["Worpress", "HTML", "CSS", "Photoshop", "SEO"],
       visualScreenshots: ["/assets/project-screenshots/silentauction-wordpress-visual-screenshot.PNG"],
       codeScreenshots: ["/assets/project-screenshots/silentauction-wordpress-code-screenshot.PNG"]
+    },
+    {
+      name: "Main Menu for Multiclinic",
+      link: "",
+      desc: `This was a redesign of the old main menu for the multiclinic app. It was designed to feature a more modern style,
+      aswell as being more responsive to different browser sizes. It also includes a toggle to switch back to the old style icons,
+      for those die-hard users who like it classic.`,
+      skills: ["Angular", "JavaScript", "CSS", "HTML"],
+      visualScreenshots: ["/assets/project-screenshots/mc-visual-screenshot.png"],
+      codeScreenshots: []
+    },
+    {
+      name: "This Portfolio",
+      link: "localhost:4200",
+      githubLink: "https://github.com/BrooklynP/portfolio/",
+      desc: `My portfolio is a project I undertook myself to help display my work.
+      The biggest challenge of this project was making it pretty as I have not used a css framework`,
+      skills: ["Angular", "HTML", "CSS", "JavaScript", "TypeScript"],
+      visualScreenshots: ["/assets/project-screenshots/portfolio-visual-screenshot.PNG"],
+      codeScreenshots: ["/assets/project-screenshots/portfolio-code-screenshot.PNG"]
     }
   ];
 
