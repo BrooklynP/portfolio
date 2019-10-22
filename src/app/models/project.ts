@@ -6,4 +6,5 @@ export interface Project {
       visualScreenshots: Array<string>;
       codeScreenshots: Array<string>;
       githubLink?: string;
+      skillToFilterBy: string;
 }

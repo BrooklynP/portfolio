@@ -13,10 +13,12 @@ export class SkillsDataService {
       name: 'C#'
     },
     {
-      name: 'Wordpress'
+      name: 'Wordpress',
+      isFilterable: true
     },
     {
-      name: 'C++'
+      name: 'C++',
+      isFilterable: true
     },
     {
       name: 'Java'
@@ -25,13 +27,15 @@ export class SkillsDataService {
       name: 'Adobe XD'
     },
     {
-      name: 'Angular'
+      name: 'Angular',
+      isFilterable: true
     },
     {
       name: 'APIs'
     },
     {
-      name: 'WPF'
+      name: 'WPF',
+      isFilterable: true
     },
     {
       name: 'Photoshop'
@@ -40,6 +44,12 @@ export class SkillsDataService {
 
   public getSkills(): Array<Skill> {
     return this.skills;
+  }
+
+  public getFilterableSkills(): Array<Skill> {
+    return this.skills.filter(skill => {
+      return skill.isFilterable === true;
+    });
   }
 
   constructor() { }

@@ -16,7 +16,8 @@ export class ProjectsDataService {
       and is the homepage of all office computer browsers.`,
       skills: ["JavaScript", "TypeScript", "Angular", "HTTP", "HTML", "CSS"],
       visualScreenshots: ["/assets/project-screenshots/clientportal-visual-screenshot.PNG"],
-      codeScreenshots: ["/assets/project-screenshots/clientportal-code-screenshot.PNG"]
+      codeScreenshots: ["/assets/project-screenshots/clientportal-code-screenshot.PNG"],
+      skillToFilterBy: "Angular"
     },
     {
       name: "Silent Auction",
@@ -26,7 +27,8 @@ export class ProjectsDataService {
        in order to produce a moving carousel of all the lots on screen.`,
       skills: ["JavaScript", "TypeScript", "Angular", "HTTP", "HTML", "CSS"],
       visualScreenshots: ["/assets/project-screenshots/silentauction-visual-screenshot.PNG"],
-      codeScreenshots: ["/assets/project-screenshots/silentauction-code-screenshot.PNG"]
+      codeScreenshots: ["/assets/project-screenshots/silentauction-code-screenshot.PNG"],
+      skillToFilterBy: "Angular"
     },
     {
       name: "Birdfair Exhibitor List",
@@ -38,7 +40,8 @@ export class ProjectsDataService {
         and also filter by the area they are in.`,
       skills: ["JavaScript", "TypeScript", "Angular", "HTTP", "HTML", "CSS"],
       visualScreenshots: ["/assets/project-screenshots/birdfair-visual-screenshot.png"],
-      codeScreenshots: ["/assets/project-screenshots/birdfair-code-screenshot.png"]
+      codeScreenshots: ["/assets/project-screenshots/birdfair-code-screenshot.png"],
+      skillToFilterBy: "Angular"
     },
     {
       name: "Sprite Editor",
@@ -47,7 +50,8 @@ export class ProjectsDataService {
       You can use multiple layers, a variety of tools and any rgb colour. I achieved a first class for this assingment`,
       skills: ["C#", "WPF", "XAML"],
       visualScreenshots: ["/assets/project-screenshots/spriteeditor-visual-screenshot.PNG"],
-      codeScreenshots: ["/assets/project-screenshots/spriteeditor-code-screenshot.PNG"]
+      codeScreenshots: ["/assets/project-screenshots/spriteeditor-code-screenshot.PNG"],
+      skillToFilterBy: "WPF"
     },
     {
       name: "Population: Zombies",
@@ -57,7 +61,8 @@ export class ProjectsDataService {
       It uses randomly placed powerups and enemies.`,
       skills: ["C++", "OpenGL"],
       visualScreenshots: ["/assets/project-screenshots/zombies-visual-screenshot.PNG"],
-      codeScreenshots: ["/assets/project-screenshots/zombies-code-screenshot.PNG"]
+      codeScreenshots: ["/assets/project-screenshots/zombies-code-screenshot.PNG"],
+      skillToFilterBy: "C++"
     },
     {
       name: "Captive Portal for PFsense",
@@ -67,7 +72,8 @@ export class ProjectsDataService {
       It was created in pure HTML and CSS, while conforming to the PFsense spec for what a captive portal should be`,
       skills: ["CSS", "HTML", "Photoshop"],
       visualScreenshots: ["/assets/project-screenshots/captiveportal-visual-screenshot.png"],
-      codeScreenshots: []
+      codeScreenshots: [],
+      skillToFilterBy: "Angular"
     },
     {
       name: "Wordpress Site To Advertise My Silent Auction Software",
@@ -76,7 +82,8 @@ export class ProjectsDataService {
       using photoshopped mockups and plugins. I also used yellow pencil in order to perfect the look with custom css`,
       skills: ["Worpress", "HTML", "CSS", "Photoshop", "SEO"],
       visualScreenshots: ["/assets/project-screenshots/silentauction-wordpress-visual-screenshot.PNG"],
-      codeScreenshots: ["/assets/project-screenshots/silentauction-wordpress-code-screenshot.PNG"]
+      codeScreenshots: ["/assets/project-screenshots/silentauction-wordpress-code-screenshot.PNG"],
+      skillToFilterBy: "Wordpress"
     },
     {
       name: "Main Menu for Multiclinic",
@@ -86,7 +93,8 @@ export class ProjectsDataService {
       for those die-hard users who like it classic.`,
       skills: ["Angular", "JavaScript", "CSS", "HTML"],
       visualScreenshots: ["/assets/project-screenshots/mc-visual-screenshot.png"],
-      codeScreenshots: []
+      codeScreenshots: [],
+      skillToFilterBy: "Angular"
     },
     {
       name: "This Portfolio",
@@ -96,7 +104,8 @@ export class ProjectsDataService {
       The biggest challenge of this project was making it pretty as I have not used a css framework`,
       skills: ["Angular", "HTML", "CSS", "JavaScript", "TypeScript"],
       visualScreenshots: ["/assets/project-screenshots/portfolio-visual-screenshot.PNG"],
-      codeScreenshots: ["/assets/project-screenshots/portfolio-code-screenshot.PNG"]
+      codeScreenshots: ["/assets/project-screenshots/portfolio-code-screenshot.PNG"],
+      skillToFilterBy: "Angular"
     }
   ];
 

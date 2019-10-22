@@ -3,7 +3,8 @@
 <p>Take a look at some of my work 👨‍💻</p>
 
 <div class="filter-by-skills">
-    <button class="skill-btn" *ngFor="let skill of skills">{{skill.name}}</button>
+    <button class="skill-btn" (click)="selectFilter('all')">All</button>
+    <button class="skill-btn" *ngFor="let skill of skills" (click)="selectFilter(skill.name)">{{skill.name}}</button>
 </div>
 
 <div class="project-cards-container">
