@@ -6,39 +6,84 @@ import { Skill } from 'src/app/models/skill';
 })
 export class SkillsDataService {
   private skills: Array<Skill> = [
+    // Languages
     {
       name: 'JavaScript'
     },
     {
-      name: 'C#'
+      name: 'TypeScript'
     },
     {
-      name: 'Wordpress',
-      isFilterable: true
+      name: 'HTML'
+    },
+    {
+      name: 'CSS'
+    },
+    {
+      name: 'C#'
     },
     {
       name: 'C++',
       isFilterable: true
     },
     {
-      name: 'Java'
+      name: 'C'
     },
     {
-      name: 'Adobe XD'
+      name: 'Java'
     },
+    // Types Of App
     {
       name: 'Angular',
       isFilterable: true
     },
     {
-      name: 'APIs'
+      name: 'Wordpress',
+      isFilterable: true
     },
     {
       name: 'WPF',
       isFilterable: true
     },
+    // Production Software
     {
       name: 'Photoshop'
+    },
+    {
+      name: 'Adobe XD'
+    },
+    {
+      name: 'Android Studio'
+    },
+    {
+      name: 'VS Code'
+    },
+    {
+      name: 'Visual Studio'
+    },
+    {
+      name: 'Unity'
+    },
+    // Version Control
+    {
+      name: 'BitBucket'
+    },
+    {
+      name: 'GitHub'
+    },
+    {
+      name: 'Perforce'
+    },
+    // Web services
+    {
+      name: 'AWS'
+    },
+    // Operating Systems
+    {
+      name: 'Windows'
+    },
+    {
+      name: 'Mac OS'
     },
   ];
 

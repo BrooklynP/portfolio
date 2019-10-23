@@ -12,11 +12,13 @@ export class ProjectsPageComponent implements OnInit {
 
   public projects: Array<any>;
   public skills: Array<any>;
+  public skillsToFilterBy: Array<any>;
   public currentFilter: string;
 
   constructor(public projectsService: ProjectsDataService, public router: Router, public skillsDataService: SkillsDataService) {
     this.projects = projectsService.getProjects();
-    this.skills = this.skillsDataService.getFilterableSkills();
+    this.skillsToFilterBy = this.skillsDataService.getFilterableSkills();
+    this.skills = this.skillsDataService.getSkills();
    }
 
   ngOnInit() {
