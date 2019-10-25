@@ -4,42 +4,43 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
 
-.hero-image{
-    height: auto;
-    width: 80vh;
-}
+    .center-row{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
 
-.center-row{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.message{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-right:10vw;
-    color: #4AF626;
-}
+        image{
+            height: auto;
+            width: 80vh;
+        }
 
-button{
-    height: 5vh;
-    background-color: #25252B;
-    color: white;
-    border-color: black;
+        .message{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 50vw;
+            color: #4AF626;
+
+            button{
+                height: 5vh;
+                background-color: #25252B;
+                color: white;
+                border-color: black;
     
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-button:hover{
-    background-color: #0B0B0D;
-}
+                -webkit-transition-duration: 0.4s; /* Safari */
+                transition-duration: 0.4s;
+            }
+            button:hover{
+                background-color: #0B0B0D;
+            }
 
-h3{
-    margin:0;
+            h3{
+                margin:0;
+            }
+        }
+    }
 }
 
 /* DEMO-SPECIFIC STYLES */
