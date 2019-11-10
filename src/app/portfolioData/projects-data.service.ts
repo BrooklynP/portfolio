@@ -97,6 +97,27 @@ export class ProjectsDataService {
       skillToFilterBy: "Wordpress"
     },
     {
+      name: "EPOS",
+      link: "",
+      githubLink: "https://github.com/BrooklynP/epos",
+      desc: `This is an epos web app designed to work for resturaunts that I created to get practice using object arrays.
+      It uses services to ensure that none of the component code contains any logic it doesn't need to, providing clean maintainble code.`,
+      skills: ["Angular", "JavaScript", "TypeScript", "CSS", "HTML"],
+      visualScreenshots: ["/assets/project-screenshots/epos-visual-screenshot.PNG"],
+      codeScreenshots: [],
+      skillToFilterBy: "Angular"
+    },
+    {
+      name: "Giphy Clone",
+      link: "",
+      githubLink: "https://github.com/BrooklynP/giphee",
+      desc: `I created this app as a clone of the giphy website using their API in order to better understand how to use REST API's.`,
+      skills: ["Angular", "JavaScript", "TypeScript", "CSS", "HTML"],
+      visualScreenshots: ["/assets/project-screenshots/giphy-visual-screenshot.PNG"],
+      codeScreenshots: [],
+      skillToFilterBy: "Angular"
+    },
+    {
       name: "Multiclinic",
       link: "",
       desc: `For the new multiclinic 4 software I was tasked with redesigning the old main menu page.
