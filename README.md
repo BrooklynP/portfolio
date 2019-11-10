@@ -1,27 +1,12 @@
-# Portfolio
+# My Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+Hi! This is the repo for my [portfolio website](www.brooklynpedley.co.uk). It displays some of the work i'm most proud of in an effort to try land a fun job as a software developer, do let me know if you've got any leads! :wink:
 
-## Development server
+## Built With
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![](https://angular.io/assets/images/favicons/favicon-96x96.png)
+* [Angular](https://angular.io/) - The web framework used 
 
-## Code scaffolding
+## Acknowledgments
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Icons from [Font Awesome](https://fontawesome.com/)
