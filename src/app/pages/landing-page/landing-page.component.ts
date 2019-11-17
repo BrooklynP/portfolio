@@ -8,14 +8,13 @@ import { Router } from '@angular/router';
 })
 export class LandingPageComponent implements OnInit {
 
-  private readonly messageLine1 = '>Hi!';
-  private readonly messageLine2 = ">I'm Brooklyn, an aspiring software developer from Hertfordshire";
-
   public messageToDisplayLine1 = '';
   public messageToDisplayLine2 = "";
 
+  private readonly messageLine1 = '>Hi!';
+  private readonly messageLine2 = ">I'm Brooklyn, an aspiring software developer from Hertfordshire";
   private i = 0;
-  private readonly speed = 50;
+  private readonly TypingSpeed = 50;
 
 
   constructor(public router: Router) {
@@ -27,42 +26,26 @@ export class LandingPageComponent implements OnInit {
 
   typeLine1() {
     if (this.i < this.messageLine1.length) {
-
       this.messageToDisplayLine1 += this.messageLine1[this.i];
       this.i++;
-      setTimeout(() => {this.typeLine1(); }, this.speed);
+      setTimeout(() => {this.typeLine1(); }, this.TypingSpeed);
     }
   }
 
   typeLine2() {
     if (this.i < this.messageLine2.length) {
-
       this.messageToDisplayLine2 += this.messageLine2[this.i];
       this.i++;
-      setTimeout(() => {this.typeLine2(); }, this.speed);
+      setTimeout(() => {this.typeLine2(); }, this.TypingSpeed);
     }
   }
 
   ngOnInit() {
     this.typeLine1();
-    console.log("finished");
     setTimeout(() => {
       this.i = 0;
       this.typeLine2();
-    }, this.speed * (this.messageLine1.length + 1));
-
-    // setTimeout( () => {
-    //   this.messageToDisplayLine1 += this.messageLine1[0];
-    //   this.messageLine1 = this.messageLine1.substring(1, this.messageLine1.length);
-    //   console.log("hello");
-    // }, 500);
-    // while (this.messageLine1.length > 0) {
-    //   setTimeout(() => {
-    //     this.messageToDisplayLine1 += this.messageLine1[0];
-    //     this.messageLine1 = this.messageLine1.substring(1, this.messageLine1.length);
-    //     console.log(this.messageToDisplayLine1);
-    //   }, 500);
-    // }
+    }, this.TypingSpeed * (this.messageLine1.length + 1));  // Fires after the first line has typed all its characters
   }
 
   clickViewProjects() {
