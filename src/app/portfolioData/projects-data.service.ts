@@ -10,6 +10,7 @@ export class ProjectsDataService {
 
   private readonly projects: Array<Project> = [
     {
+      index: 0,
       name: "Client Portal",
       link: "https://clientportal.a2it.dev/",
       desc: `This is the homepage for the office computer browsers at attend2IT and is also used for clients.
@@ -22,6 +23,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
+      index: 1,
       name: "Silent Auction",
       link: "https://liveauction.a2it.dev/",
       desc: `This is a web based solution to a silent auction. I was tasked with redesigning the old display screens,
@@ -37,6 +39,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
+      index: 2,
       name: "Birdfair Exhibitor List",
       link: "https://birdfair.org.uk/exhibit/",
       desc: `This is an exhibitor display list that is fitted within an iFrame on a wordpress site.
@@ -49,6 +52,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
+      index: 3,
       name: "Sprite Editor",
       link: "",
       desc: `This was an assingment for the module "tools programming". It is a WPF app that lets the user open pictures and edit them,
@@ -60,6 +64,7 @@ export class ProjectsDataService {
       skillToFilterBy: "WPF"
     },
     {
+      index: 4,
       name: "Population: Zombies",
       link: "",
       desc: `This was an assingment for the module "programming and mathematics". It is an openGL based top down shooter,
@@ -72,6 +77,7 @@ export class ProjectsDataService {
       skillToFilterBy: "C++"
     },
     {
+      index: 5,
       name: "Captive Portal for PFsense",
       link: "",
       desc: `This is a custom captive portal for one of our server racks to act as the default on-site.
@@ -85,6 +91,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
+      index: 6,
       name: "Wordpress Site To Advertise My Silent Auction Software",
       link: "https://silentauctiontexting.com/",
       desc: `This is a wordpress website used to advertise the silent auction software I created.
@@ -97,6 +104,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Wordpress"
     },
     {
+      index: 7,
       name: "EPOS",
       link: "",
       githubLink: "https://github.com/BrooklynP/epos",
@@ -108,6 +116,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
+      index: 8,
       name: "Giphy Clone",
       link: "",
       githubLink: "https://github.com/BrooklynP/giphee",
@@ -118,6 +127,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
+      index: 9,
       name: "Multiclinic",
       link: "",
       desc: `For the new multiclinic 4 software I was tasked with redesigning the old main menu page.
@@ -133,6 +143,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
+      index: 10,
       name: "This Portfolio",
       link: "localhost:4200",
       githubLink: "https://github.com/BrooklynP/portfolio/",
@@ -155,7 +166,11 @@ export class ProjectsDataService {
 
   setCurrentProject(index: number) {
     console.log(this.projects[index]);
-    ProjectsDataService.currentProject = this.projects[index];
+    ProjectsDataService.currentProject = this.projects.find(
+      (project) => {
+        return project.index === index;
+      }
+    );
   }
 
   getCurrentProject(): Project {

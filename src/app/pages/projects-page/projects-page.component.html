@@ -8,7 +8,7 @@
 </div>
 
 <div class="project-cards-container">
-    <button class="project-card" *ngFor="let project of projects; let i = index" (click)="selectProject(i)">
+    <button class="project-card" *ngFor="let project of projects; let i = index" (click)="selectProject(project.index)">
         <h1 class="project-card-title">{{project.name}}</h1>
         <img src="{{project.visualScreenshots[0]}}">
     </button>
