@@ -44,3 +44,16 @@ p{
 i{
     font-size: 2vmax;
 }
+@media only screen and (max-width: 800px) {
+    .visual-screenshot-image{
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .skills-list{
+        width: 90vw;
+        margin: auto;
+    }
+    header{
+        text-align: center;
+    }
+}

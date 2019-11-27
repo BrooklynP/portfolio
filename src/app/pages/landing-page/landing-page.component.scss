@@ -15,6 +15,7 @@
             width: 80vh;
         }
 
+
         .message{
             display:flex;
             flex-direction: column;
@@ -39,6 +40,17 @@
             h3{
                 margin:0;
             }
+        }
+    }
+            
+    @media only screen and (max-width: 800px) {
+        .center-row{
+            flex-direction: column;
+        }
+
+        .message{
+            width: 80vw !important;
+            margin: auto;
         }
     }
 }
