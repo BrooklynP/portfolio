@@ -20,17 +20,8 @@ export class SkillsDataService {
       name: 'CSS'
     },
     {
-      name: 'C#'
-    },
-    {
       name: 'C++',
       isFilterable: true
-    },
-    {
-      name: 'C'
-    },
-    {
-      name: 'Java'
     },
     // Types Of App
     {
@@ -53,15 +44,6 @@ export class SkillsDataService {
       name: 'Adobe XD'
     },
     {
-      name: 'Android Studio'
-    },
-    {
-      name: 'VS Code'
-    },
-    {
-      name: 'Visual Studio'
-    },
-    {
       name: 'Unity'
     },
     // Version Control
@@ -70,9 +52,6 @@ export class SkillsDataService {
     },
     {
       name: 'GitHub'
-    },
-    {
-      name: 'Perforce'
     },
     // Web services
     {

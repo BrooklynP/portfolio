@@ -12,12 +12,11 @@ export class ProjectsDataService {
     {
       index: 0,
       name: "Client Portal",
-      link: "https://clientportal.a2it.dev/",
       desc: `This is the homepage for the office computer browsers at attend2IT and is also used for clients.
       It acts as a landing page that displays only the links the user needs for their personal day.
       It works with a backend API that allows roles, groups, users and links to be managed by an admin within the app,
       and ties in with keycloak authentication(JWT) to ensure it is Secure.`,
-      skills: ["TypeScript", "Angular", "HTTP", "HTML", "CSS"],
+      skills: ["TypeScript", "Angular", "HTML", "CSS"],
       visualScreenshots: ["/assets/project-screenshots/clientportal-visual-screenshot.PNG"],
       codeScreenshots: ["/assets/project-screenshots/clientportal-code-screenshot.PNG"],
       skillToFilterBy: "Angular"
@@ -25,7 +24,6 @@ export class ProjectsDataService {
     {
       index: 1,
       name: "Silent Auction",
-      link: "https://liveauction.a2it.dev/",
       desc: `This is a web based solution to a silent auction. I was tasked with redesigning the old display screens,
       so that they had a more modern appearance and could be responsive with more than just 4:3 screens.
       I first had to design my screens in adobe XD in a way that could be displayed on any screen and worked for the client.
@@ -33,26 +31,40 @@ export class ProjectsDataService {
       which proved to be a good learning experience.
       I had to work with the back-end developer to ensure the API would provide me with what I needed in my design.
       I also created a single lot page aswell as a screen selection page.`,
-      skills: ["TypeScript", "Angular", "HTTP", "HTML", "CSS"],
+      skills: ["TypeScript", "Angular", "HTML", "CSS"],
       visualScreenshots: ["/assets/project-screenshots/silentauction-visual-screenshot.PNG"],
       codeScreenshots: ["/assets/project-screenshots/silentauction-code-screenshot.PNG"],
       skillToFilterBy: "Angular"
     },
     {
       index: 2,
+      name: "People Counter",
+      desc: `This is a dashboard to view the status of people counter cameras.
+      It uses an api that detects what people counters are on the same network and then displays them on graphs, using Highcharts.js.
+      It allows people to create groups of counters so they can organise them by area,
+      and displays appropritate graphs with only the data they want to see.
+      It required high performance array functions as each array of counter data contains upwards of thousands of counts,
+      and these arrays then need to be mapped together multiple times a minute.
+      I am very proud of the fact it was successfully used at a samsung exhibiton event`,
+      skills: ["TypeScript", "Angular", "HTML", "CSS"],
+      visualScreenshots: ["/assets/project-screenshots/peoplecounter-visual-screenshot.jpg"],
+      codeScreenshots: ["/assets/project-screenshots/silentauction-code-screenshot.PNG"],
+      skillToFilterBy: "Angular"
+    },
+    {
+      index: 3,
       name: "Birdfair Exhibitor List",
-      link: "https://birdfair.org.uk/exhibit/",
       desc: `This is an exhibitor display list that is fitted within an iFrame on a wordpress site.
       It is responsive to fit within the iframe on multiple screens. It also includes filters to search by name or by specific area,
       these filters work with each other to ensure the end user can quickly find what they are after.
       It caches the data in locol storage to help speed up the loading process`,
-      skills: ["JavaScript", "TypeScript", "Angular", "HTTP", "HTML", "CSS"],
+      skills: ["JavaScript", "TypeScript", "Angular", "HTML", "CSS"],
       visualScreenshots: ["/assets/project-screenshots/birdfair-visual-screenshot.png"],
       codeScreenshots: ["/assets/project-screenshots/birdfair-code-screenshot.png"],
       skillToFilterBy: "Angular"
     },
     {
-      index: 3,
+      index: 4,
       name: "Sprite Editor",
       link: "",
       desc: `This was an assingment for the module "tools programming". It is a WPF app that lets the user open pictures and edit them,
@@ -64,7 +76,7 @@ export class ProjectsDataService {
       skillToFilterBy: "WPF"
     },
     {
-      index: 4,
+      index: 5,
       name: "Population: Zombies",
       link: "",
       desc: `This was an assingment for the module "programming and mathematics". It is an openGL based top down shooter,
@@ -77,7 +89,7 @@ export class ProjectsDataService {
       skillToFilterBy: "C++"
     },
     {
-      index: 5,
+      index: 6,
       name: "Captive Portal for PFsense",
       link: "",
       desc: `This is a custom captive portal for one of our server racks to act as the default on-site.
@@ -91,7 +103,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
-      index: 6,
+      index: 7,
       name: "Wordpress Site To Advertise My Silent Auction Software",
       link: "https://silentauctiontexting.com/",
       desc: `This is a wordpress website used to advertise the silent auction software I created.
@@ -104,46 +116,18 @@ export class ProjectsDataService {
       skillToFilterBy: "Wordpress"
     },
     {
-      index: 7,
-      name: "EPOS",
-      link: "",
-      githubLink: "https://github.com/BrooklynP/epos",
-      desc: `This is an epos web app designed to work for resturaunts that I created to get practice using object arrays.
-      It uses services to ensure that none of the component code contains any logic it doesn't need to, providing clean maintainble code.`,
-      skills: ["Angular", "JavaScript", "TypeScript", "CSS", "HTML"],
-      visualScreenshots: ["/assets/project-screenshots/epos-visual-screenshot.PNG"],
-      codeScreenshots: [],
-      skillToFilterBy: "Angular"
-    },
-    {
       index: 8,
       name: "Giphy Clone",
       link: "",
       githubLink: "https://github.com/BrooklynP/giphee",
       desc: `I created this app as a clone of the giphy website using their API in order to better understand how to use REST API's.`,
-      skills: ["Angular", "JavaScript", "TypeScript", "CSS", "HTML"],
+      skills: ["Angular", "TypeScript", "CSS", "HTML"],
       visualScreenshots: ["/assets/project-screenshots/giphy-visual-screenshot.PNG"],
       codeScreenshots: [],
       skillToFilterBy: "Angular"
     },
     {
       index: 9,
-      name: "Multiclinic",
-      link: "",
-      desc: `For the new multiclinic 4 software I was tasked with redesigning the old main menu page.
-      I designed it to be more responsive and include modern icons, but it includes a toggle to switch back to the old style.
-      (The old style was matched faithfully to the old software but still incldues impprovements on its responsiveness).
-      I also helped with developing the diary screen by creating an algorithm that could take in the old database array,
-      which included every slot, every staff member was busy, undordered it, and then ordered it,
-      sorted out the start and end times of each availibity slot per staff member,
-      followed by formatting it in a nicer fashion that could be more easily maintained should the software be upgraded again`,
-      skills: ["Angular", "JavaScript", "TypeScript", "CSS", "HTML"],
-      visualScreenshots: ["/assets/project-screenshots/mc-visual-screenshot.png"],
-      codeScreenshots: [],
-      skillToFilterBy: "Angular"
-    },
-    {
-      index: 10,
       name: "This Portfolio",
       link: "localhost:4200",
       githubLink: "https://github.com/BrooklynP/portfolio/",
