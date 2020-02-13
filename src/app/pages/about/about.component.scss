@@ -1,4 +1,4 @@
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5,h6{
 	color: #4AF626;
 }
 
@@ -73,5 +73,43 @@ ul{
 
 	label:hover a{
 		color: #4AF626;
+	}
+}
+
+.education{
+ 	ul{
+		display: block;
+		padding-left: 32px;
+	}
+
+	.university{
+		display: flex;
+		div{
+			width: 50%;
+		}
+	}
+}
+
+.workExperience{
+	ul{
+		display: block;
+		padding-left: 32px;
+	}
+
+	.job{
+		display: flex;
+
+		div{
+			width: 50%;
+		}
+
+	}
+}
+
+.gradeLists{
+	display: flex;
+	justify-content: center;
+	p{
+		margin-top: 0;
 	}
 }
