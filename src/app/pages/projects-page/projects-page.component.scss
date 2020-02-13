@@ -24,6 +24,10 @@
     border-color: black;
     border-style: solid;
     border-width: 1px;
+
+    background-size: cover;
+
+    transition: 0.3s;
 }
 
 .filter-by-skills{
@@ -38,12 +42,7 @@
     margin-bottom:2vh;
 }
 
-.all-skills{
-    margin-left: 20vw;
-    width: 60vw;
-}
-
-.skill-btn{
+.filter-by-skills button{
     background-color: #25252B;
     color: white;
     border: none;
@@ -55,7 +54,7 @@
     cursor: pointer;
 }
 
-.skill-btn:hover{
+.filter-by-skills button:hover{
     color: #4AF626;
 }
 
@@ -65,25 +64,21 @@
 }
 
 .project-card:hover .project-card-title{
-    display: inline
-}
-.project-card:hover img{
-    display: none;
+    display: inline;
+    transition: 0.3s;
 }
 
-img {
-    width: 100%;
-    height: 100%;
+.project-card:hover{
+    background-image: none !important;
+    transition: 0.3s;
+    transition-property: background-image;
 }
+
 h1{
     text-align: center;
     margin-bottom: 2vh;
 }
-.codewars-img{
-    width: 20vw;
-    height: auto;
-    margin-left: 40vw;
-}
+
 @media only screen and (max-width: 800px) {
     .project-card{
         width: 90vw;
@@ -92,15 +87,8 @@ h1{
     .project-card:hover .project-card-title{
         display: none;
     }
-    .project-card:hover img{
-        display: block;
-    }
     .filter-by-skills{
         width: 90vw;
         margin: 2vh auto;
-    }
-    .codewars-img{
-        width: 90vw;
-        margin-left: 5vw;
     }
 }
