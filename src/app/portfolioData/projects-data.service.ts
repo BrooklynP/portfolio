@@ -38,7 +38,7 @@ export class ProjectsDataService {
     },
     {
       index: 2,
-      name: "People Counter",
+      name: "People Couting",
       desc: `This is a dashboard to view the status of people counter cameras.
       It uses an api that detects what people counters are on the same network and then displays them on graphs, using Highcharts.js.
       It allows people to create groups of counters so they can organise them by area,

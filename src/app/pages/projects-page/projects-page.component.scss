@@ -58,6 +58,12 @@
     color: #4AF626;
 }
 
+.filter-by-skills button:disabled{
+    color: black;
+    background-color: #4AF626;
+    cursor: default;
+}
+
 .project-card-title{
     display: none;
     margin: 0;

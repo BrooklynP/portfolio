@@ -3,8 +3,8 @@
 <p>Take a look at some of my work 👨‍💻</p>
 
 <div class="filter-by-skills">
-    <button (click)="selectFilter('all')">All</button>
-    <button *ngFor="let skill of skillsToFilterBy" (click)="selectFilter(skill.name)">{{skill.name}}</button>
+    <button (click)="selectFilter('all')" [disabled]="getSelectedClass('all')">All</button>
+    <button *ngFor="let skill of skillsToFilterBy" (click)="selectFilter(skill.name)" [disabled]="getSelectedClass(skill.name)">{{skill.name}}</button>
 </div>
 
 <div class="project-cards-container">

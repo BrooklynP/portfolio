@@ -13,7 +13,7 @@ export class ProjectsPageComponent implements OnInit {
   public projects: Array<any>;
   public skills: Array<any>;
   public skillsToFilterBy: Array<any>;
-  public currentFilter: string;
+  public currentFilter = 'all';
 
   constructor(public projectsService: ProjectsDataService, public router: Router, public skillsDataService: SkillsDataService) {
     this.projects = projectsService.getProjects();
@@ -24,18 +24,24 @@ export class ProjectsPageComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  getSelectedClass(skillName: string): boolean {
+    return skillName === this.currentFilter;
+  }
+
   selectProject(index: number) {
     this.projectsService.setCurrentProject(index);
     this.router.navigate(['/project']);
   }
 
   selectFilter(filterBy: string) {
+    this.currentFilter = filterBy;
     if (filterBy === 'all') {
       this.projects = this.projectsService.getProjects();
       return;
     }
 
-    this.currentFilter = filterBy;
+
     console.log("filter by: " + filterBy);
     this.projects = this.projectsService.getProjects().filter(project => {
       return project.skillToFilterBy === this.currentFilter;

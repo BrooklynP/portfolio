@@ -77,18 +77,6 @@ ul{
 }
 
 .education{
- 	ul{
-		display: block;
-		// padding-left: 16px;
-		margin-left: 16px;
-		border-left: solid 1.5px white;
-		padding-top: 12px;
-
-		li{
-			margin: 0;
-		}
-	}
-
 	.university{
 		display: flex;
 		div{
@@ -98,11 +86,6 @@ ul{
 }
 
 .workExperience{
-	ul{
-		display: block;
-		padding-left: 32px;
-	}
-
 	.job{
 		display: flex;
 
@@ -116,14 +99,34 @@ ul{
 .gradeLists{
 	display: flex;
 	justify-content: center;
-	p{
-		margin: 0;
+}
+
+ul.cmdStyleList{
+	display: block;
+	// padding-left: 16px;
+	margin-left: 16px;
+	border-left: solid 1.5px white;
+	padding-top: 12px;
+
+	li{
+		margin: 8px 0;
 	}
 
-	
-	li::before{
+	li:before{
 		width: 10px;
 		height: 1px;
 		background-color: white;
+	}
+}
+
+h5{
+	margin: 0;
+}
+
+section{
+	width: 800px;
+	margin: 0 auto;
+	p{
+		text-align: center;
 	}
 }
