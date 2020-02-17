@@ -11,9 +11,8 @@ export class LandingPageComponent implements OnInit {
   public messageToDisplayLine1 = '';
   public messageToDisplayLine2 = "";
 
-  private readonly messageLine1 = '>Hi!';
-  private readonly messageLine2 = ">I'm Brooklyn, an aspiring software developer from Hertfordshire";
-  private i = 0;
+  private messageLine1 = '>Hi!';
+  private messageLine2 = ">I'm Brooklyn, an aspiring software developer from Hertfordshire";
   private readonly TypingSpeed = 50;
 
 
@@ -22,30 +21,25 @@ export class LandingPageComponent implements OnInit {
 
   }
 
-
-
-  typeLine1() {
-    if (this.i < this.messageLine1.length) {
-      this.messageToDisplayLine1 += this.messageLine1[this.i];
-      this.i++;
-      setTimeout(() => {this.typeLine1(); }, this.TypingSpeed);
-    }
-  }
-
-  typeLine2() {
-    if (this.i < this.messageLine2.length) {
-      this.messageToDisplayLine2 += this.messageLine2[this.i];
-      this.i++;
-      setTimeout(() => {this.typeLine2(); }, this.TypingSpeed);
+  typeLine() {
+    if (this.messageLine1.length > 0) {
+      setTimeout(() => {
+        this.messageToDisplayLine1 += this.messageLine1[0];
+        this.messageLine1 = this.messageLine1.substring(1);
+        this.typeLine();
+      }, this.TypingSpeed);
+    } else
+    if (this.messageLine2.length > 0) {
+      setTimeout(() => {
+        this.messageToDisplayLine2 += this.messageLine2[0];
+        this.messageLine2 = this.messageLine2.substring(1);
+        this.typeLine();
+      }, this.TypingSpeed);
     }
   }
 
   ngOnInit() {
-    this.typeLine1();
-    setTimeout(() => {
-      this.i = 0;
-      this.typeLine2();
-    }, this.TypingSpeed * (this.messageLine1.length + 1));  // Fires after the first line has typed all its characters
+    this.typeLine();
   }
 
   clickViewProjects() {

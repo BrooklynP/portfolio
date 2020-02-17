@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-    background-color: #1E1E1E;
+    background-color: #121212;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console","sans serif";
     margin: 0px;
     overflow-x: hidden;
@@ -28,4 +28,12 @@ a:hover {
 }
 p{
     text-align: center;
+}
+
+.hr{
+    width: 95%;
+    margin: 0 auto;
+    border-top: solid 1px black;
+    // background-color: black;
+    height: 1px;
 }
