@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
-
   public messageToDisplayLine1 = '';
   public messageToDisplayLine2 = "";
 
@@ -15,11 +14,7 @@ export class LandingPageComponent implements OnInit {
   private messageLine2 = ">I'm Brooklyn, an aspiring software developer from Hertfordshire";
   private readonly TypingSpeed = 50;
 
-
-  constructor(public router: Router) {
-
-
-  }
+  constructor(public router: Router) {}
 
   typeLine() {
     if (this.messageLine1.length > 0) {
