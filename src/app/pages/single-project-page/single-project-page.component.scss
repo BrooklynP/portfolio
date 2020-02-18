@@ -8,7 +8,11 @@ img{
 }
 
 ul{
-    list-style: '> ';
+    list-style: none;
+}
+
+li:before{
+    content: "> ";
 }
 
 a{
