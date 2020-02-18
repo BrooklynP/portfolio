@@ -97,7 +97,7 @@ export class ProjectsDataService {
     },
     {
       index: 7,
-      name: "SilentAuctionTexting.com",
+      name: "Silent Auction Website",
       summary: "A wordpress to advertise the silent auction software I created",
       link: "https://silentauctiontexting.com/",
       desc: `Making use of plugins, custom CSS and Javascript, this website acts as an advert for the auction software.
