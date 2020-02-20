@@ -11,17 +11,12 @@ ul{
     list-style: none;
 }
 
+a{
+    margin: none;
+}
+
 li:before{
     content: "> ";
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
-
-a:hover{
-    color: #4AF626;
 }
 
 .pageContainer{
