@@ -1,0 +1,12 @@
+<app-header></app-header>
+<h1>Let's get in touch</h1>
+<p><small>Just fill out the form below, or send me a direct email at <a href="mailto:brooklynpedley@gmail.com">brooklynpedley@gmail.com</a></small></p>
+<form>
+    <label>Your Email <i class="fas fa-info-circle"><small> This is how i'll get back to you</small></i></label>
+    <input type="email" placeholder="someone@pmail.com" [(ngModel)]="emailSender" name="sender">
+    
+    <label>Content</label>
+    <textarea placeholder="Your message here!" [(ngModel)]="emailContent"  name="content"></textarea>
+    <button (click)="sendEmail()">Send</button>
+</form>
+<p><small>{{response}}</small></p>

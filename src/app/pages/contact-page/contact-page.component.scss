@@ -1,0 +1,57 @@
+h1{
+    text-align: center;
+}
+
+small{
+    font-size: 8pt;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console","sans serif";
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+
+    label, i{
+        color: #4AF626;
+    }
+
+    i:hover small{
+        display: inline;
+    }
+
+    small{
+        font-size: 6pt;
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console","sans serif";
+        display: none;
+    }
+
+    input, textarea{
+        margin-bottom: 24px;
+        border: solid 1px #4AF626;
+        background: none;
+        color: white;
+        padding-left: 8px;
+    }
+    
+    textarea{
+        height: 400px;
+    }
+
+    button{
+        background-color: #4AF626;;
+        padding: 8px;
+        color: black;
+        border-color: black;
+
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: #0B0B0D;
+        color: white;
+    }
+}

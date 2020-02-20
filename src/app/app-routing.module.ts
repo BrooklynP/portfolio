@@ -5,6 +5,7 @@ import { ProjectsPageComponent } from './pages/projects-page/projects-page.compo
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SingleProjectPageComponent } from './pages/single-project-page/single-project-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'projects',
     component: ProjectsPageComponent
+  },
+  {
+    path: 'contact',
+    component: ContactPageComponent
   },
   {
     path: '**',
