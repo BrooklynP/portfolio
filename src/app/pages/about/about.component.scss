@@ -75,7 +75,6 @@ ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	// justify-content: center;
 	align-items: center;
 	li {
 		margin-right: 5px;
@@ -101,12 +100,6 @@ ul{
 		div{
 			width: 400px;
 		}
-
-		div:nth-child(2){
-			display: flex;
-			flex-direction: column;
-			align-items: flex-end;
-		}
 	}
 }
 
@@ -122,12 +115,10 @@ ul{
 
 .gradeLists{
 	display: flex;
-	justify-content: center;
 }
 
 ul.cmdStyleList{
 	display: block;
-	// padding-left: 16px;
 	margin-left: 16px;
 	border-left: solid 1.5px white;
 	padding-top: 12px;
@@ -151,7 +142,7 @@ section{
 	max-width: 800px;
 	margin: 0 auto;
 	p{
-		text-align: center;
+		text-align: left;
 	}
 }
 
@@ -169,4 +160,15 @@ nav{
 }
 .listContainer{
 	width: auto !important;
+}
+
+.workExperience, .otherExperience, .education{
+	width: 800px;
+	margin: 0 auto;
+}
+
+.backToTop{
+	display: flex;
+	justify-content: center;
+	margin: 16px;
 }

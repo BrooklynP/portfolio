@@ -11,7 +11,7 @@ export class ContactPageComponent implements OnInit {
   public emailSender = '';
   public emailContent = '';
   public response = '';
-
+  private toastStatus = 'leave';
 
   headers = new HttpHeaders();
 
@@ -20,6 +20,21 @@ export class ContactPageComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  private setToast(message: string) {
+    this.toastStatus = 'enter';
+    setTimeout(() => {
+      this.toastStatus = 'leave';
+    }, 2700);
+    this.response = message;
+    setTimeout(() => {
+      this.response = '';
+    }, 3000);
+  }
+
+  getToastStatus() {
+    return this.toastStatus;
   }
 
   sendEmail() {
@@ -31,11 +46,11 @@ export class ContactPageComponent implements OnInit {
         this.emailSender = '';
         this.emailContent = '';
         if (response.data.statusCode === 200) {
-          this.response = 'Message Sent!';
+          this.setToast('Message Sent!');
         }
         console.log(response);
       }).catch((err) => {
-        this.response = 'Error sending  message';
+        this.setToast('Error sending  message');
         console.error(err);
       });
   }

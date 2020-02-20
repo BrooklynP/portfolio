@@ -9,4 +9,4 @@
     <textarea placeholder="Your message here!" [(ngModel)]="emailContent"  name="content"></textarea>
     <button (click)="sendEmail()">Send</button>
 </form>
-<p><small>{{response}}</small></p>
+<p class="responseMessage" [ngClass]="getToastStatus()"><small>{{response}}</small></p>

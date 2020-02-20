@@ -55,3 +55,17 @@ form{
         color: white;
     }
 }
+
+.responseMessage{
+    position: relative;
+}
+
+.enter{
+    top: -8px;
+    transition: 0.4s;
+}
+
+.leave{
+    top: 8px;
+    transition: 0.4s;
+}

@@ -1,7 +1,7 @@
 .project-cards-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-content: flex-start;
     flex-wrap: wrap;
 
@@ -17,7 +17,7 @@
     cursor: pointer;
 
     padding: 0;
-    margin-bottom: 2vh;
+    margin: 32px;
 
     background-color: #25252B;
 
@@ -89,9 +89,6 @@ h1{
     .project-card{
         width: 90vw;
         height: 45.5vw;
-    }
-    .project-card:hover .project-card-title{
-        display: none;
     }
     .filter-by-skills{
         width: 90vw;
