@@ -50,6 +50,29 @@ export class ProjectsDataService {
     },
     {
       index: 3,
+      name: "HyperView",
+      summary: `A stream monitoring app built with electron and angular`,
+      desc: `This app was designed to allow people to monitor mutliple streams recorders at once.
+      It provides support for watching various stream formats, as well as allowing control of recorders such as the
+      Hyperdeck Dtudio, and Aja KI Pro through their respective APIs. It also analyses audio data to draw an audiometer on a canvas.
+      I also produced the logo using Adobe Illustrator.`,
+      skills: ["Electron", "Angular", "REST APIS", "Video JS"],
+      screenshots: ["/assets/project-screenshots/hyperview-visual-screenshot.png"],
+      skillToFilterBy: "Electron"
+    },
+    {
+      index: 4,
+      name: "Travel Blog",
+      summary: `This is a travel blog website storing blog posts in a mongoDB database`,
+      desc: `I built this travel blog to learn more about back end developement. It allows post creation and viewing,
+      and stores posts inside a mongoDB atlas database. I then built an node JS express api, that interacts with the database.
+      With the angular front-end, this is my first full stack app.`,
+      skills: ["Angular", "Typescript", "Node JS / Express", "Mongo DB", "REST APIs"],
+      screenshots: ["/assets/project-screenshots/blog-visual-screenshot.png"],
+      skillToFilterBy: "Angular"
+    },
+    {
+      index: 5,
       name: "Birdfair Exhibitor List",
       summary: "An embedded Angular app displaying a list of exhibitors at the event, with filtering and searching functionality",
       desc: `This is an exhibitor display list that is fitted within an iFrame on a wordpress site.
@@ -61,7 +84,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
-      index: 4,
+      index: 6,
       name: "Sprite Editor",
       summary: "A Desktop app for creating and editing multi layered sprites, with a variety of art tools",
       link: "",
@@ -72,7 +95,7 @@ export class ProjectsDataService {
       skillToFilterBy: "WPF"
     },
     {
-      index: 5,
+      index: 7,
       name: "Population: Zombies",
       summary: "A top-down 2D shooter game, where you survive for as long as you can against hordes of zombies",
       link: "",
@@ -85,7 +108,7 @@ export class ProjectsDataService {
       skillToFilterBy: "C++"
     },
     {
-      index: 6,
+      index: 8,
       name: "Captive Portal for PFsense",
       summary: "The default captive portal for the attend2IT network at events",
       link: "",
@@ -96,7 +119,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
-      index: 7,
+      index: 9,
       name: "Silent Auction Website",
       summary: "A wordpress to advertise the silent auction software I created",
       link: "https://silentauctiontexting.com/",
@@ -107,7 +130,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Wordpress"
     },
     {
-      index: 8,
+      index: 10,
       name: "Giphy Clone",
       summary: "A clone of the popular giphy website for searching a large database of gifs for any occasion",
       link: "",
@@ -118,14 +141,14 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
-      index: 9,
+      index: 11,
       name: "This Portfolio",
       summary: "A portfolio of some of the projects i'm most proud of",
       link: "localhost:4200",
       githubLink: "https://github.com/BrooklynP/portfolio/",
       desc: `This is the website I use to display all of my best and latest work.
       I am constantly working on it as I learn new things to ensure it is the best website it can be.`,
-      skills: ["Angular"],
+      skills: ["Angular", "AWS lambda", "AWS API Gateway", "AWS SES"],
       screenshots: ["/assets/project-screenshots/portfolio-visual-screenshot.PNG"],
       skillToFilterBy: "Angular"
     }

@@ -4,7 +4,7 @@
 
 <div class="filter-by-skills">
     <button (click)="selectFilter('all')" [disabled]="getSelectedClass('all')">All</button>
-    <button *ngFor="let skill of skillsToFilterBy" (click)="selectFilter(skill.name)" [disabled]="getSelectedClass(skill.name)">{{skill.name}}</button>
+    <button *ngFor="let skill of skillsToFilterBy" (click)="selectFilter(skill)" [disabled]="getSelectedClass(skill)">{{skill}}</button>
 </div>
 
 <div class="project-cards-container">

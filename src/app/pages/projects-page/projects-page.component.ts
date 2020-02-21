@@ -11,14 +11,12 @@ import { SkillsDataService } from 'src/app/skillsData/skills-data.service';
 export class ProjectsPageComponent implements OnInit {
 
   public projects: Array<any>;
-  public skills: Array<any>;
-  public skillsToFilterBy: Array<any>;
+  public skillsToFilterBy: Array<string>;
   public currentFilter = 'all';
 
   constructor(public projectsService: ProjectsDataService, public router: Router, public skillsDataService: SkillsDataService) {
     this.projects = projectsService.getProjects();
     this.skillsToFilterBy = this.skillsDataService.getFilterableSkills();
-    this.skills = this.skillsDataService.getSkills();
    }
 
   ngOnInit() {
@@ -41,11 +39,7 @@ export class ProjectsPageComponent implements OnInit {
       return;
     }
 
-
-    console.log("filter by: " + filterBy);
     this.projects = this.projectsService.getProjects().filter(project => {
       return project.skillToFilterBy === this.currentFilter;
-    });
-    console.log(this.projects);
-  }
+    });  }
 }
