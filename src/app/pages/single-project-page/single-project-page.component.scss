@@ -5,6 +5,7 @@ p{
 img{
     width: 100%;
     height: auto;
+    border: solid 1px #4AF626;
 }
 
 ul{
@@ -23,6 +24,28 @@ li:before{
     width: 50%;
     margin: 16px auto;
 }
+
+.imgControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        border: solid 1px black;
+        color: black;
+        background-color: #4AF626;
+        cursor: pointer;
+    }
+}
+
+.selector{
+    width: 16px;
+    height: 16px;
+    border-radius:16px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 800px) {
     .visual-screenshot-image{
         width: 90vw;

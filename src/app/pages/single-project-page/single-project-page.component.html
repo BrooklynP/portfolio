@@ -6,7 +6,12 @@
         <p>{{project.summary}}</p>
     </header>
 
-    <img src="{{project.screenshots[0]}}">
+    <img src="{{project.screenshots[currentScreenshot]}}">
+    <div class="imgControls" *ngIf="project.screenshots.length > 1">
+        <button (click)="previousScreenshot()"> < </button>
+        <div (click) ="selectScreenshot(i)" class="selector" *ngFor="let image of project.screenshots; let i = index" [style.backgroundColor]="i === currentScreenshot ? 'green' : 'black'"></div>
+        <button (click)="nextScreenshot()"> > </button>
+    </div>
 
     <h2>About This Project</h2>
     <p>{{project.desc}}</p>
@@ -17,11 +22,13 @@
     </ul>
 
     <h2 *ngIf="project.link || project.githubLink">Resources</h2>
-    <a *ngIf="project.link" href="{{project.link}}" title="This Project's Website">View Project Live 
+    <a *ngIf="project.link" href="{{project.link}}" title="This Project's Website">View Project Live
         <i class="fas fa-link"></i></a><br>
-    <a *ngIf="project.githubLink" href="{{project.githubLink}}" title="This Project's GitHub">View Project Code 
+    <a *ngIf="project.githubLink" href="{{project.githubLink}}" title="This Project's GitHub">View Project Code
         <i class="fab fa-github"></i></a>
 
-        <h2>Let's Talk!</h2>
-        <p>Want to get in touch? Great! Just fill in a <a href="/contact">Contact Form</a>or email me direct at <a href="mailto:brooklynpedley@gmail.com">brooklynpedley@gmail.com</a></p>
+    <h2>Let's Talk!</h2>
+    <p>Want to get in touch? Great! Just fill in a <a href="/contact">Contact Form</a>or email me direct at <a
+            href="mailto:brooklynpedley@gmail.com">brooklynpedley@gmail.com</a>
+    </p>
 </div>

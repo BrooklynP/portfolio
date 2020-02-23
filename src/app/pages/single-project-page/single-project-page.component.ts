@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectsDataService } from 'src/app/portfolioData/projects-data.service';
 import { Router } from '@angular/router';
+import { Project } from 'src/app/models/project';
 
 @Component({
   selector: 'app-single-project-page',
@@ -9,7 +10,9 @@ import { Router } from '@angular/router';
 })
 export class SingleProjectPageComponent implements OnInit {
 
-  public project: any;
+  public currentScreenshot = 0;
+
+  public project: Project;
 
   constructor(public projectDataService: ProjectsDataService, public router: Router) { }
 
@@ -21,4 +24,23 @@ export class SingleProjectPageComponent implements OnInit {
     }
   }
 
+  nextScreenshot() {
+    if (this.currentScreenshot === this.project.screenshots.length - 1) {
+      this.currentScreenshot = 0;
+    } else {
+      this.currentScreenshot++;
+    }
+  }
+
+  previousScreenshot() {
+    if (this.currentScreenshot === 0) {
+      this.currentScreenshot = this.project.screenshots.length - 1;
+    } else {
+      this.currentScreenshot--;
+    }
+  }
+
+  selectScreenshot(index: number) {
+    this.currentScreenshot = index;
+  }
 }

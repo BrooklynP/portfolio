@@ -149,7 +149,10 @@ export class ProjectsDataService {
       desc: `This is the website I use to display all of my best and latest work.
       I am constantly working on it as I learn new things to ensure it is the best website it can be.`,
       skills: ["Angular", "AWS lambda", "AWS API Gateway", "AWS SES"],
-      screenshots: ["/assets/project-screenshots/portfolio-visual-screenshot.PNG"],
+      screenshots: ["/assets/project-screenshots/portfolio-4.jpg",
+      "/assets/project-screenshots/portfolio-2.jpg",
+      "/assets/project-screenshots/portfolio-3.jpg",
+      "/assets/project-screenshots/portfolio-1.jpg", ],
       skillToFilterBy: "Angular"
     }
   ];
