@@ -51,7 +51,7 @@ export class ProjectsDataService {
       summary: `A stream monitoring app built with electron and angular`,
       desc: `This app was designed to allow people to monitor mutliple streams recorders at once.
       It provides support for watching various stream formats, as well as allowing control of recorders such as the
-      Hyperdeck Dtudio, and Aja KI Pro through their respective APIs. It also analyses audio data to draw an audiometer on a canvas.
+      Hyperdeck Studio, and Aja KI Pro through their respective APIs. It also analyses audio data to draw an audiometer on a canvas.
       I also produced the logo using Adobe Illustrator.`,
       skills: ["Electron", "Angular", "REST APIS", "Video JS"],
       screenshots: ["/assets/project-screenshots/hyperview-visual-screenshot.png"],
