@@ -28,8 +28,7 @@ export class ProjectsPageComponent implements OnInit {
   }
 
   selectProject(index: number) {
-    this.projectsService.setCurrentProject(index);
-    this.router.navigate(['/project']);
+    this.router.navigate(['/projects', index]);
   }
 
   selectFilter(filterBy: string) {

@@ -15,7 +15,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'project',
+    path: 'projects/:uid',
     component: SingleProjectPageComponent
   },
   {

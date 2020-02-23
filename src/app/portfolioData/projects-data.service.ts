@@ -5,9 +5,6 @@ import { Project } from 'src/app/models/project';
   providedIn: 'root'
 })
 export class ProjectsDataService {
-
-  static currentProject: Project;
-
   private readonly projects: Array<Project> = [
     {
       index: 0,
@@ -148,7 +145,7 @@ export class ProjectsDataService {
       githubLink: "https://github.com/BrooklynP/portfolio/",
       desc: `This is the website I use to display all of my best and latest work.
       I am constantly working on it as I learn new things to ensure it is the best website it can be.`,
-      skills: ["Angular", "AWS lambda", "AWS API Gateway", "AWS SES"],
+      skills: ["Angular", "AWS lambda", "AWS API Gateway", "AWS SES", "AWS S3"],
       screenshots: ["/assets/project-screenshots/portfolio-4.jpg",
       "/assets/project-screenshots/portfolio-2.jpg",
       "/assets/project-screenshots/portfolio-3.jpg",
@@ -163,16 +160,7 @@ export class ProjectsDataService {
     return this.projects;
   }
 
-  setCurrentProject(index: number) {
-    console.log(this.projects[index]);
-    ProjectsDataService.currentProject = this.projects.find(
-      (project) => {
-        return project.index === index;
-      }
-    );
-  }
-
-  getCurrentProject(): Project {
-    return ProjectsDataService.currentProject;
+  public getProject(index: number): Project {
+    return this.projects.find(x => x.index === index);
   }
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectsDataService } from 'src/app/portfolioData/projects-data.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Project } from 'src/app/models/project';
 
 @Component({
@@ -14,14 +14,12 @@ export class SingleProjectPageComponent implements OnInit {
 
   public project: Project;
 
-  constructor(public projectDataService: ProjectsDataService, public router: Router) { }
+  constructor(public projectDataService: ProjectsDataService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.project = this.projectDataService.getCurrentProject();
-    if (this.project === undefined) {
-      console.warn("There was no project selected");
-      this.router.navigate(['']);
-    }
+    this.route.params.forEach((param) => {
+      this.project = this.projectDataService.getProject(parseInt(param.uid, 10));
+    });
   }
 
   nextScreenshot() {
