@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectsDataService } from 'src/app/portfolioData/projects-data.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Project } from 'src/app/models/project';
 
 @Component({
@@ -14,10 +14,14 @@ export class SingleProjectPageComponent implements OnInit {
 
   public project: Project;
 
-  constructor(public projectDataService: ProjectsDataService, private route: ActivatedRoute) { }
+  constructor(public projectDataService: ProjectsDataService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.route.params.forEach((param) => {
+      if (param.uid >= this.projectDataService.getProjectsLength()) {
+        this.router.navigateByUrl('/projects');
+
+      }
       this.project = this.projectDataService.getProject(parseInt(param.uid, 10));
     });
   }

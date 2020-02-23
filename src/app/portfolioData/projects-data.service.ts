@@ -163,4 +163,8 @@ export class ProjectsDataService {
   public getProject(index: number): Project {
     return this.projects.find(x => x.index === index);
   }
+
+  public getProjectsLength(): number {
+    return this.projects.length;
+  }
 }

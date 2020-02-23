@@ -31,9 +31,10 @@ li:before{
     align-items: center;
 
     button{
-        border: solid 1px black;
-        color: black;
-        background-color: #4AF626;
+        border: none;
+        background: none;
+        color: #4AF626;
+        font-size: 24pt;
         cursor: pointer;
     }
 }
@@ -45,6 +46,7 @@ li:before{
     margin: 0 8px;
     cursor: pointer;
 }
+
 
 @media only screen and (max-width: 800px) {
     .visual-screenshot-image{
