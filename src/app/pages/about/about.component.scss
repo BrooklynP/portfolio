@@ -25,6 +25,8 @@ p{
 }
 
 .row{
+	max-width: 800px;
+	margin: 0 auto;
 	display: flex;
 	padding: 10px;
 	.left{
@@ -35,7 +37,6 @@ p{
 
 	.right{
 		width:40%;
-		padding: 0 50px;
 	}
 }
 
@@ -95,16 +96,6 @@ ul{
 
 .education{
 	.university{
-		display: flex;
-		justify-content: center;
-		div{
-			width: 400px;
-		}
-	}
-}
-
-.workExperience{
-	.job{
 		display: flex;
 		justify-content: center;
 		div{

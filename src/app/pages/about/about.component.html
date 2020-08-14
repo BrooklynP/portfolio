@@ -5,12 +5,12 @@
     <a href="/about#other-experience">Other Experience</a><span>/</span>
     <a href="/about#education">Education</a>
 </nav>
+<div class="hr"></div>
 <div class="row">
     <div class="left">
-        <h1>Brooklyn Pedley</h1>
-        <h2>Trainee Developer</h2>
-        <p>I am a trainee developer with experience in front-end developement, producing bespoke web apps for a wide
-            array of clients with a focus on Angular.</p>
+        <h1>Junior Developer</h1>
+        <p>I am a Junior developer learning on the job to become a full stack developer. I have experience using Angular with some exposure to React.<br><br>
+            I use Node.JS and various database technologies to produce my backends</p>
         <a class="downloadCV" href="/assets/brooklyn-pedley-cv.docx" download title="Download My CV">Download CV<i
                 class="fas fa-download"></i></a>
         <a class="downloadCV" href="https://www.github.com/brooklynP" target="_blank" title="Go To My Github">See My
@@ -21,82 +21,67 @@
     </div>
 </div>
 <div class="hr"></div>
-<div class="techStack" id="tech-stack">
+<section class="techStack" id="tech-stack">
     <h3>My Tech Stack</h3>
     <div class="body">
         <div>
-            <h4>Angular, Ionic, Electron</h4>
-            <p>I have worked with angular to produce front-end web apps, as well as pairing this with ionic to create
-                PWAs and electron to create desktop apps</p>
+            <h4>The Frontend</h4>
+            <p>I Use Angular to create my front end web apps. With experience using Ionic and Electron to create cross-platform. I also have exposure to React</p>
         </div>
         <div>
-            <h4>Node JS, Express</h4>
-            <p>I have worked with Node JS and Express to produce back-end REST APIs</p>
+            <h4>The Backend</h4>
+            <p>I have worked with Node JS and Express to produce back-end REST APIs. I've also had some experience using loopback to streamline the API building process</p>
         </div>
         <div>
-            <h4>Github, BitBucket</h4>
-            <p>I use github for personal projects, and bitbucket for work projects. I've also had previous experience with perforce.</p>
+            <h4>Source Control</h4>
+            <p>I like to use GitHub for my personal projects, and BitBucket for my work projects. I've also had some experience with perforce</p>
         </div>
         <div>
-            <h4>AWS</h4>
-            <p>Experience using s3, cloudfront, SES, API gateway, IAM and lambda</p>
+            <h4>Web Services</h4>
+            <p>I have currently been using AWS for my web service needs. Using s3 and cloudfront to host my apps. And API gateway and lambda to host some APIs</p>
         </div>
         <div>
-            <h4>MongoDB</h4>
-            <p>I have worked with MongoDB to create databases</p>
+            <h4>Databases</h4>
+            <p>I have created mongoDB databases after following their mongoDB university developer course. I have also had exposure to SQL databses and Couchbase</p>
         </div>
         <div>
-            <h4>Windows, macOS</h4>
-            <p>I work with a windows enviroment for personal projects aswell as a mac enviroment for work projects
+            <h4>Platforms</h4>
+            <p>I have worked with both Windows and Mac platforms to develop, And I am used to testing for a variety of mobile and desktop enviroments
             </p>
         </div>
     </div>
-</div>
+</section>
 <div class="hr"></div>
 <div class="workExperience" id="work-experience">
     <h3>Work Experience</h3>
-    <h4>Trainee Developer at Attend2IT > May 2019 - Current</h4>
-    <div class="job">
-        <div>
-            <h5>Duties</h5>
-            <ul class="cmdStyleList">
-                <li>- Producing bespoke apps and websites for a wide array of clients from the events industry.</li>
-                <li>- Working on front-end web-apps, wordpress sites, mobile apps, desktop apps.</li>
-                <li>- Working on solo projects aswell as collaberating with other devlopers to maintain larger projects.</li>
-                <li>- Supporting clients on-site and on the phone to ensure they are happy with the quality of their apps</li>
-                <li>- Also working as a networking technician when needed.</li>
-            </ul>
+    <app-work-tile title="Junior Developer" company="AlphaFirst" [startDate]="createDate('September, 2020')" 
+    [duties]="['Producing bespoke software solutions for businesses',
+    'Creating backend APIS and databases',
+    'Designing and creating responsive frontends',
+    'Supporting clients on-site and on the phone']"
+    [techStack]="{
+        Frontend: 'React',
+        Backend: 'Node.JS',
+        Hosting: 'AWS',
+        Database: 'SQL'
+      }"></app-work-tile>
 
-        </div>
-        <div>
-            <h5>The Tech Stack</h5>
-            <ul class="cmdStyleList">
-                <li>- Front-end: Angular
-                </li>
-                <li>- Back-end: Node.JS
-                </li>
-                <li>- Source Control: BitBucket
-                </li>
-                <li>- Hosting: AWS
-                </li>
-                <li>- Database: Couchbase
-                </li>
-                <li>- Authentication: Keycloak
-                </li>
-                <li>- Mobile And Desktop Apps: Ionic, Electron
-                </li>
-            </ul>
-        </div>
-    </div>
-    <h4>Work Experience at the Hertfordshire Police HQ > May 2015</h4>
-    <section>
-        <p>
-            I had the opportunity to attend a couple of weeks work experience at the Hertfordshire Police
-            HQ. Here I shadowed their IT team as well as the in house developers.
-            I learnt alot about repairing IT equipment as well as seeing hands on how software developers
-            worked in the industry.
-        </p>
-    </section>
+    <app-work-tile title="Trainee Developer" company="Attend2IT" [startDate]="createDate('May, 2019')" [endDate]="createDate('September, 2020')" 
+    [duties]="['Producing bespoke apps and websites for the events industry',
+    'Designing and creating responsive frontends',
+    'Creating Wordpress websites with custom functionality',
+    'Developing apps to work multiple formats',
+    'Supporting clients on-site and on the phone',
+    'Working as a networking technician when needed']"
+    [techStack]="{
+        Frontend: 'Angular',
+        Backend: 'Node.JS',
+        Hosting: 'AWS',
+        Database: 'Couchbase'
+      }"></app-work-tile>
+
+
+
 </div>
 <div class="hr"></div>
 <div class="otherExperience" id="other-experience">
@@ -123,6 +108,15 @@
         </p>
         <p>
             I take great pride in the fact I was able to win the gold medal in this competition!
+        </p>
+    </section>
+    <h4>Work Experience at the Hertfordshire Police HQ > May 2015</h4>
+    <section>
+        <p>
+            I had the opportunity to attend a couple of weeks work experience at the Hertfordshire Police
+            HQ. Here I shadowed their IT team as well as the in house developers.
+            I learnt alot about repairing IT equipment as well as seeing hands on how software developers
+            worked in the industry.
         </p>
     </section>
 </div>

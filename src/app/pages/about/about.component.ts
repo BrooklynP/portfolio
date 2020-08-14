@@ -12,4 +12,8 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  createDate(date: string){
+    return new Date(date);
+  }
+
 }

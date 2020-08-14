@@ -1,0 +1,66 @@
+p,h1{
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+}
+
+section{
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 16px 0;
+}
+
+.number{
+    display:inline-block;
+    width: 24px;
+    min-width: 24px;
+    max-width: 24px;
+}
+
+.indent1{
+    margin-left: 24px;
+}
+
+.indent2{
+    margin-left: 48px;
+}
+
+.duty{
+    display: inline-block;
+}
+
+.dutyContainer{
+    display: flex;
+}
+
+.comment{
+    color: #6A9955
+}
+
+.comma{
+    color:white
+}
+
+.export{
+    color: #BB5A91;
+}
+
+
+.className{
+    color: #4EC9B0;
+}
+
+.modifier{
+    color: #569cd6;
+}
+
+.string{
+    // color: #4AF626;
+    color: #6A9955;
+}
+
+.memberName{
+    color: lightsteelblue;
+}

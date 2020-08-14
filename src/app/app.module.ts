@@ -15,6 +15,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { SingleProjectPageComponent } from './pages/single-project-page/single-project-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { WorkTileComponent } from './components/work-tile/work-tile.component';
+import { CustomDatePipe } from './pipes/customDatePipe.datepipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
     HeaderComponent,
     ContactFormComponent,
     SingleProjectPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    WorkTileComponent,
+    CustomDatePipe
   ],
   imports: [
     BrowserModule,
