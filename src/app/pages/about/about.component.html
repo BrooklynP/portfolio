@@ -9,7 +9,8 @@
 <div class="row">
     <div class="left">
         <h1>Junior Developer</h1>
-        <p>I am a Junior developer learning on the job to become a full stack developer. I have experience using Angular with some exposure to React.<br><br>
+        <p>I am a Junior developer learning on the job to become a full stack developer. I have experience using Angular
+            with some exposure to React.<br><br>
             I use Node.JS and various database technologies to produce my backends</p>
         <a class="downloadCV" href="/assets/brooklyn-pedley-cv.docx" download title="Download My CV">Download CV<i
                 class="fas fa-download"></i></a>
@@ -26,27 +27,33 @@
     <div class="body">
         <div>
             <h4>The Frontend</h4>
-            <p>I Use Angular to create my front end web apps. With experience using Ionic and Electron to create cross-platform. I also have exposure to React</p>
+            <p>I Use Angular to create my front end web apps. With experience using Ionic and Electron to create
+                cross-platform. I also have exposure to React</p>
         </div>
         <div>
             <h4>The Backend</h4>
-            <p>I have worked with Node JS and Express to produce back-end REST APIs. I've also had some experience using loopback to streamline the API building process</p>
+            <p>I have worked with Node JS and Express to produce back-end REST APIs. I've also had some experience using
+                loopback to streamline the API building process</p>
         </div>
         <div>
             <h4>Source Control</h4>
-            <p>I like to use GitHub for my personal projects, and BitBucket for my work projects. I've also had some experience with perforce</p>
+            <p>I like to use GitHub for my personal projects, and BitBucket for my work projects. I've also had some
+                experience with perforce</p>
         </div>
         <div>
             <h4>Web Services</h4>
-            <p>I have currently been using AWS for my web service needs. Using s3 and cloudfront to host my apps. And API gateway and lambda to host some APIs</p>
+            <p>I have currently been using AWS for my web service needs. Using s3 and cloudfront to host my apps. And
+                API gateway and lambda to host some APIs</p>
         </div>
         <div>
             <h4>Databases</h4>
-            <p>I have created mongoDB databases after following their mongoDB university developer course. I have also had exposure to SQL databses and Couchbase</p>
+            <p>I have created mongoDB databases after following their mongoDB university developer course. I have also
+                had exposure to SQL databses and Couchbase</p>
         </div>
         <div>
             <h4>Platforms</h4>
-            <p>I have worked with both Windows and Mac platforms to develop, And I am used to testing for a variety of mobile and desktop enviroments
+            <p>I have worked with both Windows and Mac platforms to develop, And I am used to testing for a variety of
+                mobile and desktop enviroments
             </p>
         </div>
     </div>
@@ -54,71 +61,46 @@
 <div class="hr"></div>
 <div class="workExperience" id="work-experience">
     <h3>Work Experience</h3>
-    <app-work-tile title="Junior Developer" company="AlphaFirst" [startDate]="createDate('September, 2020')" 
-    [duties]="['Producing bespoke software solutions for businesses',
+    <app-work-tile title="Junior Developer" company="AlphaFirst" [startDate]="createDate('September, 2020')" [duties]="['Producing bespoke software solutions for businesses',
     'Creating backend APIS and databases',
     'Designing and creating responsive frontends',
-    'Supporting clients on-site and on the phone']"
-    [techStack]="{
+    'Supporting clients on-site and on the phone']" [techStack]="{
         Frontend: 'React',
         Backend: 'Node.JS',
         Hosting: 'AWS',
         Database: 'SQL'
       }"></app-work-tile>
 
-    <app-work-tile title="Trainee Developer" company="Attend2IT" [startDate]="createDate('May, 2019')" [endDate]="createDate('September, 2020')" 
-    [duties]="['Producing bespoke apps and websites for the events industry',
+    <app-work-tile title="Trainee Developer" company="Attend2IT" [startDate]="createDate('May, 2019')"
+        [endDate]="createDate('September, 2020')" [duties]="['Producing bespoke apps and websites for the events industry',
     'Designing and creating responsive frontends',
     'Creating Wordpress websites with custom functionality',
     'Developing apps to work multiple formats',
     'Supporting clients on-site and on the phone',
-    'Working as a networking technician when needed']"
-    [techStack]="{
+    'Working as a networking technician when needed']" [techStack]="{
         Frontend: 'Angular',
         Backend: 'Node.JS',
         Hosting: 'AWS',
         Database: 'Couchbase'
       }"></app-work-tile>
-
-
-
 </div>
 <div class="hr"></div>
 <div class="otherExperience" id="other-experience">
     <h3>Other Experience</h3>
-    <h4>Certifaction in UX/UI > Feb. 2020 </h4>
-    <section>
-        <p>I have attained a BSC accredited certifaction in foundation user experience following a training
-            course on the subject</p>
-    </section>
-    <h4>Gold medal at the World Skills Show > Nov. 2016</h4>
-    <section>
-        <p>
-            Paired with an engineer I went to the world skills show at the NEC,
-            to represent my school in undertaking a 48hr compeititon with teams from other schools and universities.
-        </p>
-        <p>
-            We had to create an autonomous robot capable of detecting RFID coloured tags on objects
-            scattered around an arena and then move them to corresponding nets.
-        </p>
-        <p>
-            I had to quickly learn how to use C while my engineer developed the robot. Then within the 2 days I
-            developed
-            an AI that could patrol the arena and scan objects it came across.
-        </p>
-        <p>
-            I take great pride in the fact I was able to win the gold medal in this competition!
-        </p>
-    </section>
-    <h4>Work Experience at the Hertfordshire Police HQ > May 2015</h4>
-    <section>
-        <p>
-            I had the opportunity to attend a couple of weeks work experience at the Hertfordshire Police
-            HQ. Here I shadowed their IT team as well as the in house developers.
-            I learnt alot about repairing IT equipment as well as seeing hands on how software developers
-            worked in the industry.
-        </p>
-    </section>
+    <app-other-experience-tile [date]="createDate('February 2020')" experienceTitle="CertifactionInUIUX" [text]="['I have attained a BSC accredited certifaction in foundation user experience following a training
+        course on the subject']"></app-other-experience-tile>
+
+    <app-other-experience-tile [date]="createDate('November 2016')" experienceTitle="GoldMedalAtWorldSkillsShow"
+        [text]="['Paired with an engineer I went to the world skills show at the NEC, to represent my school in undertaking a 48hr compeititon with teams from other schools and universities.',
+        'We had to create an autonomous robot capable of detecting RFID coloured tags on objects scattered around an arena and then move them to corresponding nets.',
+        'I had to quickly learn how to use C while my engineer developed the robot. Then within the 2 days I developed an AI that could patrol the arena and scan objects it came across.',
+        'I take great pride in the fact I was able to win the gold medal in this competition!']">
+    </app-other-experience-tile>
+
+    <app-other-experience-tile [date]="createDate('May 2015')" experienceTitle="WorkExpAtHertsPoliceHQ" [text]="['I had the opportunity to attend a couple of weeks work experience at the Hertfordshire Police
+        HQ. Here I shadowed their IT team as well as the in house developers.
+        I learnt alot about repairing IT equipment as well as seeing hands on how software developers
+        worked in the industry.']"></app-other-experience-tile>
 </div>
 <div class="hr"></div>
 <div class="education" id="education">
@@ -129,7 +111,8 @@
             <h5>Details</h5>
             <p>I undertook 2 years of a BSc. course in producing video games using game engines such as unity.
                 I produced many 2D and 3D games such as working with a team of designers in order to create a 3D racing
-                game. I also created desktop apps such as a sprite editing app. I was unfortunately unable to complete the course.
+                game. I also created desktop apps such as a sprite editing app. I was unfortunately unable to complete
+                the course.
             </p>
         </div>
         <div>

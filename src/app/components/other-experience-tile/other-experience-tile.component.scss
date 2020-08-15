@@ -1,0 +1,64 @@
+.export{
+    color: #BB5A91;
+}
+
+.quote{
+    color: #6A9955;
+}
+
+.string{
+    // color: #4AF626;
+    color: #6A9955;
+    display: inline-block;
+
+}
+
+.stringContainer{
+    display: flex;
+}
+
+.functionYellow{
+    color: #d7ba7d;
+}
+
+.function{
+    color: lightsteelblue;
+}
+
+.member{
+    color: gray;
+}
+
+.indent1{
+    margin-left: 24px;
+}
+
+.indent2{
+    margin-left: 48px;
+}
+
+.indent3{
+    margin-left: 72px;
+}
+
+p,h1{
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+section{
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 16px 0;
+}
+
+.number{
+    display:inline-block;
+    width: 24px;
+    min-width: 24px;
+    max-width: 24px;
+}
