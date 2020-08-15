@@ -9,6 +9,11 @@
 		color: inherit;
 	}
 }
+
+.links{
+	display: flex;
+}
+
 .downloadCV:hover{
 	background-color: #4AF626;
 	color: black;
@@ -159,6 +164,10 @@ nav{
 		color: #4AF626;
 		margin: 0 8px;
 	}
+	p{
+		margin: 0;
+		text-align: center;
+	}
 }
 .listContainer{
 	width: auto !important;
@@ -172,4 +181,17 @@ footer{
 
 .hr{
 	width: 800px;
+}
+
+@media screen and (max-width: 1140px) {
+	.row{
+		// max-width: 95vw;
+		flex-direction: column-reverse;
+	}
+	.left, .right{
+		width: 100% !important;
+	}
+	nav{
+		margin: 0 8px;
+	}
 }
