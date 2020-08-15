@@ -8,6 +8,7 @@ p,h1{
 
 section{
     border: solid 1px black;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
     border-radius: 4px;
     padding: 8px;
     margin: 16px 0;
@@ -18,6 +19,9 @@ section{
     width: 24px;
     min-width: 24px;
     max-width: 24px;
+    margin-right: 8px;
+    color: gray;
+    text-align: right;
 }
 
 .indent1{
@@ -25,7 +29,9 @@ section{
 }
 
 .indent2{
-    margin-left: 48px;
+    margin-left: 24px;
+    border-left: solid 1px gray;
+    padding-left: 16px;
 }
 
 .duty{
@@ -34,6 +40,11 @@ section{
 
 .dutyContainer{
     display: flex;
+    padding: 0;
+}
+
+span{
+    padding: 2px 0;
 }
 
 .comment{

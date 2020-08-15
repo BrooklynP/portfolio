@@ -50,13 +50,35 @@ img{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
+
+		border: solid 1px black;
+		box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+		border-radius: 4px;
+		padding: 8px;
+		margin: 16px 0;
+
 		div{
-			margin-right: 16px;
 			width: 240px;
 			h4, p{
 				text-align: left;
 			}
 		}
+	}
+}
+
+.educationTile{
+	border: solid 1px black;
+	box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+	border-radius: 4px;
+	padding: 8px;
+	margin: 16px 0;
+
+	h4{
+		margin: 0;
+		margin-bottom: 16px;
+	}
+	p{
+		margin-bottom: 0;
 	}
 }
 
@@ -142,7 +164,7 @@ nav{
 	width: auto !important;
 }
 
-.backToTop{
+footer{
 	display: flex;
 	justify-content: center;
 	margin: 16px;
