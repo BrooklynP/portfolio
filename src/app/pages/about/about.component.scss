@@ -1,23 +1,17 @@
-h1,h2,h3,h4,h5,h6{
-	color: #4AF626;
-}
-
 .downloadCV{
 	border: solid 2px #4AF626;
 	padding: 8px;
 	text-decoration: none;
 	color: #4AF626;
+	margin-right: 8px;
 	i{
 		margin-left: 4px;
-		color: #4AF626;
+		color: inherit;
 	}
 }
 .downloadCV:hover{
 	background-color: #4AF626;
 	color: black;
-	i{
-		color: black;
-	}
 }
 
 p{
@@ -66,10 +60,6 @@ img{
 	}
 }
 
-.workExperience, .otherExperience, .education{
-	padding: 10px;
-}
-
 ul{
 	display:flex;
 	flex-direction: row;
@@ -94,13 +84,12 @@ ul{
 	}
 }
 
-.education{
-	.university{
-		display: flex;
-		justify-content: center;
-		div{
-			width: 400px;
-		}
+
+.university{
+	display: flex;
+	justify-content: center;
+	div{
+		width: 400px;
 	}
 }
 
@@ -151,11 +140,6 @@ nav{
 }
 .listContainer{
 	width: auto !important;
-}
-
-.workExperience, .otherExperience, .education{
-	width: 800px;
-	margin: 0 auto;
 }
 
 .backToTop{
