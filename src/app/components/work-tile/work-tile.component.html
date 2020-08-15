@@ -4,7 +4,7 @@
     <p><span class="number">2</span><span class="modifier indent1">public </span>  <span class="memberName">title
         </span> = <span class="string">'{{title}}'</span>;</p>
     <p><span class="number">3</span><span class="modifier indent1">public </span> <span class="memberName">date
-        </span> = <span class="string">'{{startDate | customDate}} to {{endDate  | customDate}}'</span>; <span class="comment">//{{getLengthOfTime()}} Months</span></p>
+        </span> = <span class="string">'{{startDate | customDate}} to {{endDateProvided ? (endDate  | customDate) : 'Current'}}'</span>; <span class="comment">//{{getLengthOfTime()}} Months</span></p>
     <p><span class="number">4</span></p>
     <p><span class="number">5</span>
         <span class="modifier indent1">public </span> <span class="memberName">duties </span> = [<br>
