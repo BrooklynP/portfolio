@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  private showSideMenu = false;
+
   constructor() { }
 
   ngOnInit() {
   }
+  
+  toggleSideMenu(){
+    this.showSideMenu = !this.showSideMenu;
+  }
 
+  shouldShowSideMenu() {
+    return this.showSideMenu;
+  }
 }
