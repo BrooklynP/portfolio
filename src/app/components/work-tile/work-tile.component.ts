@@ -15,7 +15,7 @@ export class WorkTileComponent implements OnInit {
   @Input() setID: string;
 
   public endDateProvided = true;
-  public arrayOfLines = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+  public arrayOfLines = [];
 
   constructor() { }
 

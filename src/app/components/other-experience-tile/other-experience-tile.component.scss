@@ -55,14 +55,17 @@ section{
     border-radius: 4px;
     padding: 8px;
     margin: 16px 10px;
+    display: flex;
 }
 
-.number{
-    display:inline-block;
+.numbers{
     width: 24px;
     min-width: 24px;
     max-width: 24px;
     margin-right: 8px;
-    color: gray;
+}
+
+.numbers p{
     text-align: right;
+    color: gray;
 }

@@ -9,15 +9,29 @@ export class OtherExperienceTileComponent implements OnInit {
   @Input() date: Date;
   @Input() text: string;
   @Input() experienceTitle: string;
+  @Input() setID: string;
+
+  public arrayOfLines = [];
 
   constructor() { }
 
   ngOnInit() {
+    window.addEventListener('load', () => {
+      this.arrayOfLines = this.calculateHowManyLines();
+    });
   }
 
-}
+  getArrayOfLines() {
+    return this.arrayOfLines;
+  }
 
-
-export function CertificationInUIUX(date = "Feb. 2020") {
-  console.log("I have attained a BSC accredited certifaction in foundation user experience following a training course on the subject");
+  calculateHowManyLines() {
+    const lineHeight = 16;
+    const element = document.getElementById(this.setID);
+    if (element) {
+      const numberOfLines = (element.clientHeight / lineHeight);
+      const array = Array(numberOfLines).fill(0);
+      return array;
+    }
+  }
 }
