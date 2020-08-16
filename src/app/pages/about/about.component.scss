@@ -19,10 +19,6 @@
 	color: black;
 }
 
-p{
-	text-align: left;
-}
-
 .row{
 	max-width: 800px;
 	margin: 0 auto;
@@ -47,10 +43,6 @@ img{
 }
 
 .techStack{
-	padding: 10px;
-	h3, h4{
-		color: #4AF626;
-	}
 	.body{
 		display: flex;
 		flex-wrap: wrap;
@@ -97,17 +89,6 @@ ul{
 	li {
 		margin-right: 5px;
 		margin-left: 5px;
-	}
-	label{
-		color: #4AF626;
-	}
-
-	i{
-		font-size: 32pt;
-	}
-
-	label:hover a{
-		color: #4AF626;
 	}
 }
 
@@ -193,5 +174,11 @@ footer{
 	}
 	nav{
 		margin: 0 8px;
+	}
+
+}
+@media screen and (max-width: 820px) {
+	.hr{
+		width: 95vw;
 	}
 }
