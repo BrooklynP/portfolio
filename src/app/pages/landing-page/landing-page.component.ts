@@ -22,8 +22,8 @@ export class LandingPageComponent implements OnInit {
   public messageToDisplayLine13 = '';
 
   private messageLine1 = 'Tasks: 37 total, 1 running';
-  private messageLine2 = 'Uptime: 00:16:45';
-  private messageLine3 = 'DATE HERE V 1.0.2';
+  private messageLine2 = ' v1.0.2';
+  private messageLine3 = 'Uptime: 00:16:45';
   private messageLine4 = 'Load Avg. 4.85, 2.84, 2.10 CPU Usage: 38.61% user, 29.70% sys, 31.68% idle';
   private messageLine5 = 'SharedLibs: 215M resident, 57M data, 23M linkedit.';
   private messageLine6 = 'MemRegions 318147 total, 5823M resident, 190M private, 2646M shared.';
@@ -31,13 +31,14 @@ export class LandingPageComponent implements OnInit {
   private messageLine8 = 'VM: 13T vsize, 1299M framework vsize, 47281010(0) swapins, 49223315(0) swapouts.';
   private messageLine9 = 'Networks: packets: 21230244/27G in, 26612975/3179M out.';
   private messageLine10 = 'Disks: 5635951/270G read, 4674334/276G written.';
-  private messageLine11 = '> Hi!';
-  private messageLine12 = "> I'm Brooklyn, an aspiring software developer from Hertfordshire";
-  private messageLine13 = " > root@portfolio: $echo 'Click Here To See Portfolio'";
+  private messageLine11 = "> $echo \"Hi!\"";
+  private messageLine12 = "> $echo \"I'm Brooklyn, an aspiring software developer from Hertfordshire\"";
+  private messageLine13 = " > root@portfolio: $echo \"Click Here To See Portfolio\"";
 
   private readonly TypingSpeed = 5;
 
   constructor(public router: Router) {
+    this.messageLine2 = (new Date()).toISOString() + this.messageLine2;
 
   }
 
