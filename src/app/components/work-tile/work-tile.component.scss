@@ -1,9 +1,6 @@
-p,h1{
+p{
     color: white;
-    text-align: left;
-    font-size: 16px;
     margin: 0;
-    font-weight: 500;
 }
 
 section{
@@ -11,17 +8,20 @@ section{
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
     border-radius: 4px;
     padding: 8px;
-    margin: 16px 0;
+    margin: 16px 10px;
+    display: flex;
 }
 
-.number{
-    display:inline-block;
+.numbers{
     width: 24px;
     min-width: 24px;
     max-width: 24px;
     margin-right: 8px;
-    color: gray;
+}
+
+.numbers p{
     text-align: right;
+    color: gray;
 }
 
 .indent1{
@@ -29,24 +29,12 @@ section{
 }
 
 .indent2{
-    margin-left: 24px;
+    display: inline-block;
     border-left: solid 1px gray;
     padding-left: 16px;
 }
 
-.duty{
-    display: inline-block;
-}
-
-.dutyContainer{
-    display: flex;
-    padding: 0;
-}
-
-span{
-    padding: 2px 0;
-}
-
+// Colours
 .comment{
     color: #6A9955
 }
@@ -59,7 +47,6 @@ span{
     color: #BB5A91;
 }
 
-
 .className{
     color: #4EC9B0;
 }
@@ -69,7 +56,6 @@ span{
 }
 
 .string{
-    // color: #4AF626;
     color: #6A9955;
 }
 

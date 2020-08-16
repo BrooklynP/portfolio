@@ -1,24 +1,43 @@
 <section>
-    <h1><span class="number">1</span><span class="export">export </span> <span class="modifier">class </span> <span class="className">{{company}}</span>{{' {'}}
-    </h1>
-    <p><span class="number">2</span><span class="modifier indent1">public </span>  <span class="memberName">title
-        </span> = <span class="string">'{{title}}'</span>;</p>
-    <p><span class="number">3</span><span class="modifier indent1">public </span> <span class="memberName">date
-        </span> = <span class="string">'{{startDate | customDate}} to {{endDateProvided ? (endDate  | customDate) : 'Current'}}'</span>; <span class="comment">//{{getLengthOfTime()}} Months</span></p>
-    <p><span class="number">4</span></p>
-    <p><span class="number">5</span>
-        <span class="modifier indent1">public </span> <span class="memberName">duties </span> = [<br>
-        <span *ngFor="let duty of duties; let i = index" class="dutyContainer"><span class="number">{{i + 6}}</span><span class="string indent2 duty">'{{duty}}'<span class="comma">,</span></span><br></span>
-        <span class="number">{{duties.length + 6}}</span> <span class="indent1">];</span>
-    </p>
-    <p>
-        <span class="number">{{duties.length + 7}}</span><br>
-        <span class="number">{{duties.length + 8}}</span><span class="modifier indent1">public </span> <span class="memberName">techStack </span> = {{'{'}}<br>
-        <span class="number">{{duties.length + 9}}</span><span class="memberName indent2">frontend:</span><span class="string"> '{{techStack.Frontend}}'</span>,<br>
-        <span class="number">{{duties.length + 10}}</span><span class="memberName indent2">backend:</span><span class="string"> '{{techStack.Backend}}'</span>,<br>
-        <span class="number">{{duties.length + 11}}</span><span class="memberName indent2">webServices:</span><span class="string"> '{{techStack.Hosting}}'</span>,<br>
-        <span class="number">{{duties.length + 12}}</span><span class="memberName indent2">database:</span><span class="string"> '{{techStack.Database}}'</span>,<br>
-        <span class="number">{{duties.length + 13}}</span><span class="indent1">{{'}'}};</span><br>
-        <span class="number">{{duties.length + 14}}</span><span>{{'}'}}</span>
-    </p>
+    <div class="numbers">
+        <p *ngFor="let number of getArrayOfLines(); let i = index">{{i + 1}}</p>
+    </div>
+    <div [id]="setID">
+        <p>
+            <span class="export">export </span><span class="modifier">class </span> <span
+                class="className">{{company}}</span>{{' {'}}
+        </p>
+        <p class="indent1">
+            <span class="modifier">public </span> <span class="memberName">title
+            </span> = <span class="string">'{{title}}'</span>;
+        </p>
+        <p class="indent1">
+            <span class="modifier">public </span> <span class="memberName">date
+            </span> = <span class="string">'{{startDate | customDate}} to
+                {{endDateProvided ? (endDate  | customDate) : 'Current'}}'</span>; <span
+                class="comment">//{{getLengthOfTime()}} Months</span>
+        </p>
+        <br>
+        <p class="indent1">
+            <span class="modifier">public </span> <span class="memberName">duties </span> = [<br>
+            <span *ngFor="let duty of duties; let i = index">
+                <span class="string indent2">'{{duty}}'<span class="comma">,</span></span><br>
+            </span>
+            <span>];</span>
+        </p>
+        <br>
+        <p class="indent1">
+            <span class="modifier">public </span> <span class="memberName">techStack </span> = {{'{'}}<br>
+            <span class="memberName indent2">frontend:</span><span class="string"> '{{techStack.Frontend}}'</span>,<br>
+            <span class="memberName indent2">backend:</span><span class="string"> '{{techStack.Backend}}'</span>,<br>
+            <span class="memberName indent2">webServices:</span><span class="string">
+                '{{techStack.Hosting}}'</span>,<br>
+            <span class="memberName indent2">database:</span><span class="string"> '{{techStack.Database}}'</span>,<br>
+            <span>{{'}'}};</span><br>
+        </p>
+        <p>
+            {{'}'}}
+        </p>
+    </div>
+
 </section>

@@ -12,16 +12,21 @@ export class WorkTileComponent implements OnInit {
   @Input() endDate: Date;
   @Input() duties: Array<string>;
   @Input() techStack: any;
+  @Input() setID: string;
 
   public endDateProvided = true;
+  public arrayOfLines = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 
   constructor() { }
 
   ngOnInit() {
-    if(!this.endDate){
+    if (!this.endDate) {
       this.endDate = new Date();
       this.endDateProvided = false;
     }
+    window.addEventListener('load', () => {
+      this.arrayOfLines = this.calculateHowManyLines();
+    });
   }
 
   getLengthOfTime() {
@@ -30,6 +35,20 @@ export class WorkTileComponent implements OnInit {
     months -= this.startDate.getMonth();
     months += this.endDate.getMonth();
     return months;
+  }
+
+  getArrayOfLines() {
+    return this.arrayOfLines;
+  }
+
+  calculateHowManyLines() {
+    const lineHeight = 16;
+    const element = document.getElementById(this.setID);
+    if (element) {
+      const numberOfLines = (element.clientHeight / lineHeight);
+      const array = Array(numberOfLines).fill(0);
+      return array;
+    }
   }
 }
 
