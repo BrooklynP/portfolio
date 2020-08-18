@@ -3,7 +3,7 @@
         <p *ngFor="let number of getArrayOfLines(); let i = index">{{i + 1}}</p>
     </div>
     <div [id]="setID">
-        <p [id]="setID + 'p'">
+        <p>
             <span class="export">export </span><span class="modifier">class </span> <span
                 class="className">{{company}}</span>{{' {'}}
         </p>
@@ -35,7 +35,7 @@
             <span class="memberName indent2">database:</span><span class="string"> '{{techStack.Database}}'</span>,<br>
             <span>{{'}'}};</span><br>
         </p>
-        <p>
+        <p  [id]="setID + 'p'">
             {{'}'}}
         </p>
     </div>
