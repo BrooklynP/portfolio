@@ -42,10 +42,10 @@ export class WorkTileComponent implements OnInit {
   }
 
   calculateHowManyLines() {
-    const lineHeight = 16;
+    const lineHeight = document.getElementById(this.setID + 'p');
     const element = document.getElementById(this.setID);
     if (element) {
-      const numberOfLines = (element.clientHeight / lineHeight);
+      const numberOfLines = Math.round(element.clientHeight / lineHeight.clientHeight);
       const array = Array(numberOfLines).fill(0);
       return array;
     }

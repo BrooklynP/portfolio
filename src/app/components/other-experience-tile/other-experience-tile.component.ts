@@ -26,10 +26,10 @@ export class OtherExperienceTileComponent implements OnInit {
   }
 
   calculateHowManyLines() {
-    const lineHeight = 16;
+    const line = document.getElementById(this.setID + 'p');
     const element = document.getElementById(this.setID);
     if (element) {
-      const numberOfLines = (element.clientHeight / lineHeight);
+      const numberOfLines = Math.round(element.clientHeight / line.clientHeight);
       const array = Array(numberOfLines).fill(0);
       return array;
     }
