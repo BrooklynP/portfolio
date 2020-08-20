@@ -1,0 +1,55 @@
+name: Build And Deploy
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        #Specifies node version in script variables
+        node-version: [12.x]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+      
+      #Caches node modules so that if package.json doesnt change after npm install, the build process is quicker to run
+    - name: Cache node modules
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+          
+      #Setsup node enviroment
+    - name: Node ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+        
+    #Create email secrets file:
+    - name: create secrets.service.ts
+      env:
+        EMAIL_TOKEN: ${{ secrets.EMAILTOKEN }}
+      run: echo "$EMAIL_TOKEN" | base64 -d > ./src/app/secrets/secret.service.ts
+
+    #run npm install to get node modules, then build
+    - name: npm install and npm run build
+      run: |
+        npm i
+        npm run build:prod
+        
+    #Push build files to /dist folder on github. Uses token in project settings to get acess to push
+    - name: Push Build to Releases
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "dist/portfolio/*"
+        token: ${{ secrets.TOKEN }}
