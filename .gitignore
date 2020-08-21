@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 
 # # Secret information to hide from source control
-# secrets
+secrets
