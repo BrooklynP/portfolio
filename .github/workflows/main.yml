@@ -35,11 +35,4 @@ jobs:
     
     - name: npm run build
       run: |
-        npm run build:prod
-    
-    #Push build files to /dist folder on github. Uses token in project settings to get acess to push
-    - name: Push Build to Releases
-      uses: ncipollo/release-action@v1
-      with:
-        artifacts: "dist/portfolio/*"
-        token: ${{ secrets.TOKEN }}
+        npm run build:browser:prod
