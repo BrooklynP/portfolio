@@ -44,7 +44,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-# # Secret information to hide from source control
-secrets
-src/app/secrets/secret.service.ts
+src/app/secrets/secretDev.service.ts
