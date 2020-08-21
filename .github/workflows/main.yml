@@ -23,11 +23,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         
-    - name: SECRET HERE ${{ secrets.EMAILTOKEN }}
-      env:
-        EMAIL_TOKEN: ${{ secrets.EMAILTOKEN }}
-      run: echo "$EMAIL_TOKEN" 
-        
     #Create email secrets file:
     - name: create secrets.service.ts
       env:
