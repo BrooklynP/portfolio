@@ -27,6 +27,7 @@ jobs:
     - name: create secrets.service.ts
       env:
         EMAIL_TOKEN: ${{ secrets.EMAILTOKEN }}
+      run: echo "$EMAIL_TOKEN"  
       run: echo "$EMAIL_TOKEN" | base64 -d > ./src/app/secrets/secret.service.ts
 
     - name: npm install
