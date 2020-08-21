@@ -21,7 +21,7 @@ export class OtherExperienceTileComponent implements OnInit {
     });
   }
 
-  getArrayOfLines() {
+  getArrayOfLines(): Array<number> {
     return this.arrayOfLines;
   }
 
