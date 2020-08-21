@@ -33,7 +33,7 @@ export class ContactPageComponent implements OnInit {
     }, 3000);
   }
 
-  getToastStatus() {
+  getToastStatus(): string {
     return this.toastStatus;
   }
 
