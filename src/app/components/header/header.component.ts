@@ -13,12 +13,12 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
-  
-  toggleSideMenu(){
+
+  toggleSideMenu() {
     this.showSideMenu = !this.showSideMenu;
   }
 
-  shouldShowSideMenu() {
+  shouldShowSideMenu(): boolean {
     return this.showSideMenu;
   }
 }
