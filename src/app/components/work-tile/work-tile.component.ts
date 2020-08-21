@@ -29,7 +29,7 @@ export class WorkTileComponent implements OnInit {
     });
   }
 
-  getLengthOfTime() {
+  getLengthOfTime(): number {
     let months = 0;
     months = (this.endDate.getFullYear() - this.startDate.getFullYear()) * 12;
     months -= this.startDate.getMonth();
@@ -37,7 +37,7 @@ export class WorkTileComponent implements OnInit {
     return months;
   }
 
-  getArrayOfLines() {
+  getArrayOfLines(): Array<number> {
     return this.arrayOfLines;
   }
 
