@@ -1,6 +1,9 @@
 name: Build And Deploy
 
-on: push
+on:
+  push:
+    tags:
+      - 'v*.*.*'
 
 jobs:
   build:
@@ -35,7 +38,7 @@ jobs:
         
     #Push build files to /dist folder on github. Uses token in project settings to get acess to push
     - name: Push Build to /dist
-      uses: ncipollo/release-action@v1
+      uses: ncipollo/release-action@v1.7.2
       with:
         artifacts: "dist/portfolio/*"
         token: ${{ secrets.TOKEN }}
