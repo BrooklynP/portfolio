@@ -47,3 +47,4 @@ Thumbs.db
 
 # # Secret information to hide from source control
 secrets
+src/app/secrets/secret.service.ts
