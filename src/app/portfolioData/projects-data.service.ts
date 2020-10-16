@@ -70,18 +70,6 @@ export class ProjectsDataService {
     },
     {
       index: 5,
-      name: "Birdfair Exhibitor List",
-      summary: "An embedded Angular app displaying a list of exhibitors at the event, with filtering and searching functionality",
-      desc: `This is an exhibitor display list that is fitted within an iFrame on a wordpress site.
-      It is responsive to fit within the iframe on multiple screens. It also includes filters to search by name or by specific area,
-      these filters work with each other to ensure the end user can quickly find what they are after.
-      It caches the data in locol storage to help speed up the loading process`,
-      skills: ["Angular", "Typescript", "Wordpress", "REST APIs"],
-      screenshots: ["/assets/project-screenshots/birdfair-visual-screenshot.png"],
-      skillToFilterBy: "Angular"
-    },
-    {
-      index: 6,
       name: "Sprite Editor",
       summary: "A Desktop app for creating and editing multi layered sprites, with a variety of art tools",
       link: "",
@@ -92,7 +80,7 @@ export class ProjectsDataService {
       skillToFilterBy: "WPF"
     },
     {
-      index: 7,
+      index: 6,
       name: "Population: Zombies",
       summary: "A top-down 2D shooter game, where you survive for as long as you can against hordes of zombies",
       link: "",
@@ -105,7 +93,7 @@ export class ProjectsDataService {
       skillToFilterBy: "C++"
     },
     {
-      index: 8,
+      index: 7,
       name: "Captive Portal for PFsense",
       summary: "The default captive portal for the attend2IT network at events",
       link: "",
@@ -116,7 +104,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
-      index: 9,
+      index: 8,
       name: "Silent Auction Website",
       summary: "A wordpress to advertise the silent auction software I created",
       link: "https://silentauctiontexting.com/",
@@ -127,7 +115,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Wordpress"
     },
     {
-      index: 10,
+      index: 9,
       name: "Giphy Clone",
       summary: "A clone of the popular giphy website for searching a large database of gifs for any occasion",
       link: "",
@@ -138,7 +126,7 @@ export class ProjectsDataService {
       skillToFilterBy: "Angular"
     },
     {
-      index: 11,
+      index: 10,
       name: "This Portfolio",
       summary: "A portfolio of some of the projects i'm most proud of",
       link: "localhost:4200",
