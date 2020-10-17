@@ -1,28 +1,27 @@
 <app-header></app-header>
 <nav>
     <p>
-    <a href="/about#tech-stack">Tech Stack</a><span>/</span>
-    <a href="/about#work-experience">Work Experience</a><span>/</span>
-    <a href="/about#other-experience">Other Experience</a><span>/</span>
-    <a href="/about#education">Education</a>
+        <a href="/about#tech-stack">Tech Stack</a><span>/</span>
+        <a href="/about#work-experience">Work Experience</a><span>/</span>
+        <a href="/about#other-experience">Other Experience</a><span>/</span>
+        <a href="/about#education">Education</a>
     </p>
 </nav>
 <div class="hr"></div>
 <div class="row">
     <div class="left">
-        <h1>Junior Developer</h1>
-        <p>I am a Junior developer learning on the job to become a full stack developer. I have experience using Angular
-            with some exposure to React.<br><br>
-            I use Node.JS and various database technologies to produce my backends</p>
+        <h1>Full Stack Developer</h1>
+        <p>Hi! I am a Junior Developer based in Hertfordshire. <br><br> I have {{getExperience('May 1, 2019')}} years industry experience producing software, with a focus on Javascript web applications.</p>
         <div class="links">
             <a class="downloadCV" href="/assets/brooklyn-pedley-cv.docx" download title="Download My CV">Download CV<i
                     class="fas fa-download"></i></a>
             <a class="downloadCV" href="https://www.github.com/brooklynP" target="_blank" title="Go To My Github">See My
                 Code<i class="fab fa-github"></i></a>
+            <a class="downloadCV" href="https://www.linkedin.com/in/brooklynpedley/" target="_blank" title="See My Linkedin"><i class="fab fa-linkedin small"></i></a>
         </div>
     </div>
     <div class="right">
-        <img src="../../../assets/portrait.jpg">
+        <img src="../../../assets/portrait.jpg" alt="Profile Picture">
     </div>
 </div>
 <div class="hr"></div>
@@ -31,13 +30,12 @@
     <div class="body">
         <div>
             <h4>The Frontend</h4>
-            <p>I Use Angular to create my front end web apps. With experience using Ionic and Electron to create
-                cross-platform. I also have exposure to React</p>
+            <p>I Use React to create my frontends. With experience using Ionic and Electron to create
+                cross-platform apps, aswell as previous experience in Angular</p>
         </div>
         <div>
             <h4>The Backend</h4>
-            <p>I have worked with Node JS and Express to produce back-end REST APIs. I've also had some experience using
-                loopback to streamline the API building process</p>
+            <p>I currently use Node.JS and Express to produce back-end REST APIs. I also Use loopback 3 and 4 to quickly scaffold API's</p>
         </div>
         <div>
             <h4>Source Control</h4>
@@ -51,8 +49,9 @@
         </div>
         <div>
             <h4>Databases</h4>
-            <p>I have created mongoDB databases after following their mongoDB university developer course. I have also
-                had exposure to SQL databses and Couchbase</p>
+            <p>I currently Work with SQL in the Microsoft SQL Server enviroment. And have had previous exposure to Couchbase,
+                aswell as completing the MongoDB University course
+            </p>
         </div>
         <div>
             <h4>Platforms</h4>
@@ -66,21 +65,22 @@
 <div class="hr"></div>
 <section id="work-experience">
     <h3>&lt; Work Experience &gt;</h3>
-    <app-work-tile setID="workTileRight1" title="Junior Developer" company="AlphaFirst" [startDate]="createDate('September 1, 2020')" [duties]="['Producing bespoke software solutions for businesses',
+    <app-work-tile setID="workTileRight1" title="Junior Developer" company="AlphaFirst"
+        [startDate]="createDate('September 1, 2020')" [duties]="['Producing bespoke software solutions',
     'Creating backend APIS and databases',
     'Designing and creating responsive frontends',
-    'Supporting clients on-site and on the phone']" [techStack]="{
+    'Supporting clients and managing projects', 'Producing Wordpress and Shopify sites']" [techStack]="{
         Frontend: 'React',
-        Backend: 'Node.JS',
+        Backend: 'Node.JS and Loopback',
         Hosting: 'AWS',
         Database: 'SQL'
       }"></app-work-tile>
 
-    <app-work-tile setID="workTileRight2" title="Trainee Developer" company="Attend2IT" [startDate]="createDate('May 1, 2019')"
-        [endDate]="createDate('September 1, 2020')" [duties]="['Producing bespoke apps and websites for the events industry',
+    <app-work-tile setID="workTileRight2" title="Trainee Developer" company="Attend2IT"
+        [startDate]="createDate('May 1, 2019')" [endDate]="createDate('September 1, 2020')" [duties]="['Producing bespoke apps and websites for the events industry',
     'Designing and creating responsive frontends',
     'Creating Wordpress websites with custom functionality',
-    'Developing apps to work multiple formats',
+    'Developing apps to work multiple on formats',
     'Supporting clients on-site and on the phone',
     'Working as a networking technician when needed']" [techStack]="{
         Frontend: 'Angular',
@@ -93,16 +93,19 @@
 <div class="hr"></div>
 <section id="other-experience">
     <h3>&lt; Other Experience &gt;</h3>
-    <app-other-experience-tile setID="expTile1" [date]="createDate('February 1, 2020')" experienceTitle="CertifactionInUIUX" [text]="['I have attained a BSC accredited certifaction in foundation user experience following a training
+    <app-other-experience-tile setID="expTile1" [date]="createDate('February 1, 2020')"
+        experienceTitle="CertifactionInUIUX" [text]="['I have attained a BSC accredited certifaction in foundation user experience following a training
         course on the subject']"></app-other-experience-tile>
 
-    <app-other-experience-tile setID="expTile2" [date]="createDate('November 1, 2016')" experienceTitle="GoldMedalAtWorldSkillsShow" [text]="['Paired with an engineer I went to the world skills show at the NEC, to represent my school in undertaking a 48hr compeititon with teams from other schools and universities.',
+    <app-other-experience-tile setID="expTile2" [date]="createDate('November 1, 2016')"
+        experienceTitle="GoldMedalAtWorldSkillsShow" [text]="['Paired with an engineer I went to the world skills show at the NEC, to represent my school in undertaking a 48hr compeititon with teams from other schools and universities.',
         'We had to create an autonomous robot capable of detecting RFID coloured tags on objects scattered around an arena and then move them to corresponding nets.',
         'I had to quickly learn how to use C while my engineer developed the robot. Then within the 2 days I developed an AI that could patrol the arena and scan objects it came across.',
         'I take great pride in the fact I was able to win the gold medal in this competition!']">
     </app-other-experience-tile>
 
-    <app-other-experience-tile setID="expTile3" [date]="createDate('May 1, 2015')" experienceTitle="WorkExpAtHertsPoliceHQ" [text]="['I had the opportunity to attend a couple of weeks work experience at the Hertfordshire Police
+    <app-other-experience-tile setID="expTile3" [date]="createDate('May 1, 2015')"
+        experienceTitle="WorkExpAtHertsPoliceHQ" [text]="['I had the opportunity to attend a couple of weeks work experience at the Hertfordshire Police
         HQ. Here I shadowed their IT team as well as the in house developers.
         I learnt alot about repairing IT equipment as well as seeing hands on how software developers
         worked in the industry.']"></app-other-experience-tile>

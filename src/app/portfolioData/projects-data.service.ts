@@ -177,7 +177,7 @@ export class ProjectsDataService {
       screenshots: ["/assets/project-screenshots/spaceinvaders-1.PNG",
       "/assets/project-screenshots/spaceinvaders-2.PNG",
       "/assets/project-screenshots/spaceinvaders-3.PNG", ],
-      skillToFilterBy: "c++"
+      skillToFilterBy: "C++"
     },
   ];
 

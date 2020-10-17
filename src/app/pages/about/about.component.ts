@@ -6,14 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
+  private readonly millisecondsInAYear = 31536000000;
   constructor() { }
 
   ngOnInit() {
   }
 
-  createDate(date: string){
+  createDate(date: string) {
     return new Date(date);
+  }
+
+  getExperience(date: string) {
+    const  today = new Date();
+    const startDate = new Date(date);
+    const experienceInYears = ((today.getTime() - startDate.getTime()) / this.millisecondsInAYear).toFixed(1);
+    return experienceInYears;
   }
 
 }

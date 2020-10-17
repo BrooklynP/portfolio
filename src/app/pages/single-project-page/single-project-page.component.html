@@ -6,7 +6,7 @@
         <p>{{project.summary}}</p>
     </header>
 
-    <img src="{{project.screenshots[currentScreenshot]}}">
+    <img src="{{project.screenshots[currentScreenshot]}}" alt="Screenshot of project">
     <div class="imgControls" *ngIf="project.screenshots.length > 1">
         <button (click)="previousScreenshot()"> < </button>
         <div (click) ="selectScreenshot(i)" class="selector" *ngFor="let image of project.screenshots; let i = index" [style.backgroundColor]="i === currentScreenshot ? '#4AF626' : 'black'"></div>
