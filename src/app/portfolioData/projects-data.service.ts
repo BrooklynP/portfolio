@@ -129,7 +129,7 @@ export class ProjectsDataService {
       index: 10,
       name: "This Portfolio",
       summary: "A portfolio of some of the projects i'm most proud of",
-      link: "localhost:4200",
+      link: "brooklynpedley.co.uk",
       githubLink: "https://github.com/BrooklynP/portfolio/",
       desc: `This is the website I use to display all of my best and latest work.
       I am constantly working on it as I learn new things to ensure it is the best website it can be.`,
@@ -139,7 +139,46 @@ export class ProjectsDataService {
       "/assets/project-screenshots/portfolio-3.jpg",
       "/assets/project-screenshots/portfolio-1.jpg", ],
       skillToFilterBy: "Angular"
-    }
+    },
+    {
+      index: 11,
+      name: "Super Sumo",
+      summary: "A 2D party game built in Unity",
+      link: "",
+      githubLink: "https://github.com/BrooklynP/Super-Sumo/",
+      desc: `This is a 2D party game where 4 people use Xbox controllers to move around an arena and push their opponents out of the ring,
+      to be the last sumo wrestler standing`,
+      skills: ["Unity", "C#"],
+      screenshots: ["/assets/project-screenshots/supersumo-visual-screenshot.PNG"],
+      skillToFilterBy: "Unity"
+    },
+    {
+      index: 12,
+      name: "Rogue RPG",
+      summary: "A 3D rogue-like RPG game built in Unity",
+      link: "",
+      githubLink: "https://github.com/BrooklynP/Unity-Rogue/",
+      desc: `This is a 3D rogue-like game.
+      You start in a randomly generated map and must move from room to room to eliminate enemies and collect gold.
+      The enemies have AI to pathfind and to decide wether to fight or run away based on their vision, health etc.
+      Once a level is cleared you move onto a new one, until you die!`,
+      skills: ["Unity", "C#"],
+      screenshots: ["/assets/project-screenshots/rogue-visual-screenshot.PNG"],
+      skillToFilterBy: "Unity"
+    },
+    {
+      index: 13,
+      name: "Space Invaders",
+      summary: "A faithful reproduction of the classic space invaders",
+      link: "",
+      githubLink: "https://github.com/BrooklynP/space-invaders/",
+      desc: `a OpenGL based reproduction of space invaders. Including fully destructible shields, Stored high scores and more`,
+      skills: ["C++", "OpenGL"],
+      screenshots: ["/assets/project-screenshots/spaceinvaders-1.PNG",
+      "/assets/project-screenshots/spaceinvaders-2.PNG",
+      "/assets/project-screenshots/spaceinvaders-3.PNG", ],
+      skillToFilterBy: "c++"
+    },
   ];
 
   constructor() { }

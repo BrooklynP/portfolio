@@ -1,4 +1,4 @@
-<section>
+<section class="landing">
     <div>
         <div class="text">
             <h1>{{messageToDisplayLine1}}</h1>
@@ -11,12 +11,10 @@
             <h2>{{messageToDisplayLine8}}</h2>
             <h2>{{messageToDisplayLine9}}</h2>
             <h2>{{messageToDisplayLine10}}</h2>
-            <h2>{{messageToDisplayLine11}}</h2>
-            <h2>{{messageToDisplayLine12}}</h2>
+            <h2 [innerHTML]="messageToDisplayLine11"></h2>
+            <h2 [innerHTML]="messageToDisplayLine12"></h2>
 
         </div>
-        <button (click)="clickViewProjects()">
-            {{messageToDisplayLine13}}
-        </button>
+        <button (click)="clickViewProjects()" [innerHTML]="messageToDisplayLine13"></button>
     </div>
 </section>

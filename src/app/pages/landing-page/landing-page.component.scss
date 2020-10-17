@@ -1,46 +1,43 @@
-body{
-}
-
-section{
+section.landing{
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-}
+    overflow-y: hidden;
 
-div{
-    width: 90vw;
-    max-width: 1000px;
-}
-
-button{
-    // width: 100%;
-    padding: 0;
-    background: none;
-    color:#4AF626;
-    border: none;
-    text-align: left;
-    font-size: 1.5em;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", 'Backup';
-    font-weight: 700;
-
-    -webkit-transition-duration: 0.3s; /* Safari */
-    transition-duration: 0.3s;
-
-    cursor: pointer;
-}
-        
-button:hover{
-    background-color: #0B0B0D;
-}
-
-h1,h2,button{
-    padding: 8px;
-}
+    div{
+        width: 90vw;
+        max-width: 1000px;
+    }
+    
+    button{
+        // width: 100%;
+        padding: 0;
+        background: none;
+        color:#4AF626;
+        border: none;
+        text-align: left;
+        font-size: 1.5em;
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", 'Backup';
+        font-weight: 700;
+    
+        -webkit-transition-duration: 0.3s; /* Safari */
+        transition-duration: 0.3s;
+    
+        cursor: pointer;
+    }
+    
+    span{
+        color: white;
+    }
             
-@media only screen and (max-width: 800px) {
-
+    button:hover{
+        background-color: #0B0B0D;
+    }
+    
+    h1,h2,button{
+        padding: 8px;
+    }
 }

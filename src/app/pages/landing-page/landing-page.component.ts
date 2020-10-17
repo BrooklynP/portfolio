@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss']
+  styleUrls: ['./landing-page.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class LandingPageComponent implements OnInit {
   public messageToDisplayLine1 = '';
@@ -32,7 +33,7 @@ export class LandingPageComponent implements OnInit {
   private messageLine9 = 'Networks: packets: 21230244/27G in, 26612975/3179M out.';
   private messageLine10 = 'Disks: 5635951/270G read, 4674334/276G written.';
   private messageLine11 = "> $echo \"Hi!\"";
-  private messageLine12 = "> $echo \"I'm Brooklyn, an aspiring software developer from Hertfordshire\"";
+  private messageLine12 = "> $echo \"I'm Brooklyn, a full stack developer from Hertfordshire\"";
   private messageLine13 = " > root@portfolio: $echo \"Click Here To See Portfolio\"";
 
   private readonly TypingSpeed = 5;
@@ -116,6 +117,12 @@ export class LandingPageComponent implements OnInit {
     }else
     if (this.messageLine11.length > 0) {
       setTimeout(() => {
+        if(this.messageToDisplayLine11.length === 9){
+          this.messageToDisplayLine11 += '<span>';
+        }
+        else if(this.messageToDisplayLine11.length === 18){
+          this.messageToDisplayLine11 += '</span>';
+        }
         this.messageToDisplayLine11 += this.messageLine11[0];
         this.messageLine11 = this.messageLine11.substring(1);
         this.typeLine();
@@ -123,6 +130,12 @@ export class LandingPageComponent implements OnInit {
     }else
     if (this.messageLine12.length > 0) {
       setTimeout(() => {
+        if(this.messageToDisplayLine12.length === 9){
+          this.messageToDisplayLine12 += '<span>';
+        }
+        else if(this.messageToDisplayLine12.length === 70){
+          this.messageToDisplayLine12 += '</span>';
+        }
         this.messageToDisplayLine12 += this.messageLine12[0];
         this.messageLine12 = this.messageLine12.substring(1);
         this.typeLine();
@@ -130,6 +143,12 @@ export class LandingPageComponent implements OnInit {
     }else
     if (this.messageLine13.length > 0) {
       setTimeout(() => {
+        if(this.messageToDisplayLine13.length === 26){
+          this.messageToDisplayLine13 += '<span>';
+        }
+        else if(this.messageToDisplayLine13.length === 59){
+          this.messageToDisplayLine13 += '</span>';
+        }
         this.messageToDisplayLine13 += this.messageLine13[0];
         this.messageLine13 = this.messageLine13.substring(1);
         this.typeLine();
