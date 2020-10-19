@@ -94,7 +94,7 @@ export class ProjectsDataService {
     },
     {
       index: 7,
-      name: "Captive Portal for PFsense",
+      name: "Captive Portal",
       summary: "The default captive portal for the attend2IT network at events",
       link: "",
       desc: `This is the captive portal for the default network and is the first page users of the wifi will see.
@@ -105,7 +105,7 @@ export class ProjectsDataService {
     },
     {
       index: 8,
-      name: "Silent Auction Website",
+      name: "Silent Auction",
       summary: "A wordpress to advertise the silent auction software I created",
       link: "https://silentauctiontexting.com/",
       desc: `Making use of plugins, custom CSS and Javascript, this website acts as an advert for the auction software.

@@ -17,11 +17,18 @@ export class ProjectsPageComponent implements OnInit {
   constructor(public projectsService: ProjectsDataService, public router: Router, public skillsDataService: SkillsDataService) {
     this.projects = projectsService.getProjects();
     this.skillsToFilterBy = this.skillsDataService.getFilterableSkills();
-   }
+  }
 
   ngOnInit() {
   }
 
+  getProjectTitleYOffset(title) {
+    if (document.body.clientWidth > 800) {
+      return (-90 - (title.length > 14 ? 15 : 0)) + 'px';
+    } else {
+      return - (document.body.clientWidth * 0.2775) + 'px';
+    }
+  }
 
   getSelectedClass(skillName: string): boolean {
     return skillName === this.currentFilter;
@@ -40,5 +47,6 @@ export class ProjectsPageComponent implements OnInit {
 
     this.projects = this.projectsService.getProjects().filter(project => {
       return project.skillToFilterBy === this.currentFilter;
-    });  }
+    });
+  }
 }
