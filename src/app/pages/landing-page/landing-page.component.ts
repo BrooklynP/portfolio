@@ -58,103 +58,100 @@ export class LandingPageComponent implements OnInit {
         this.messageLine2 = this.messageLine2.substring(1);
         this.typeLine();
       }, this.TypingSpeed);
-    }else
+    } else
     if (this.messageLine3.length > 0) {
       setTimeout(() => {
         this.messageToDisplayLine3 += this.messageLine3[0];
         this.messageLine3 = this.messageLine3.substring(1);
         this.typeLine();
       }, this.TypingSpeed);
-    }else
+    } else
     if (this.messageLine4.length > 0) {
       setTimeout(() => {
         this.messageToDisplayLine4 += this.messageLine4[0];
         this.messageLine4 = this.messageLine4.substring(1);
         this.typeLine();
       }, this.TypingSpeed);
-    }else
+    } else
     if (this.messageLine5.length > 0) {
       setTimeout(() => {
         this.messageToDisplayLine5 += this.messageLine5[0];
         this.messageLine5 = this.messageLine5.substring(1);
         this.typeLine();
       }, this.TypingSpeed);
-    }else
+    } else
     if (this.messageLine6.length > 0) {
       setTimeout(() => {
         this.messageToDisplayLine6 += this.messageLine6[0];
         this.messageLine6 = this.messageLine6.substring(1);
         this.typeLine();
       }, this.TypingSpeed);
-    }else
+    } else
     if (this.messageLine7.length > 0) {
       setTimeout(() => {
         this.messageToDisplayLine7 += this.messageLine7[0];
         this.messageLine7 = this.messageLine7.substring(1);
         this.typeLine();
       }, this.TypingSpeed);
-    }else
+    } else
     if (this.messageLine8.length > 0) {
       setTimeout(() => {
         this.messageToDisplayLine8 += this.messageLine8[0];
         this.messageLine8 = this.messageLine8.substring(1);
         this.typeLine();
       }, this.TypingSpeed);
-    }else
+    } else
     if (this.messageLine9.length > 0) {
       setTimeout(() => {
         this.messageToDisplayLine9 += this.messageLine9[0];
         this.messageLine9 = this.messageLine9.substring(1);
         this.typeLine();
       }, this.TypingSpeed);
-    }else
+    } else
     if (this.messageLine10.length > 0) {
       setTimeout(() => {
         this.messageToDisplayLine10 += this.messageLine10[0];
         this.messageLine10 = this.messageLine10.substring(1);
         this.typeLine();
       }, this.TypingSpeed);
-    }else
+    } else
     if (this.messageLine11.length > 0) {
       setTimeout(() => {
-        if(this.messageToDisplayLine11.length === 9){
+        if(this.messageToDisplayLine11.length === 9) {
           this.messageToDisplayLine11 += '<span>';
-        }
-        else if(this.messageToDisplayLine11.length === 18){
+        } else if(this.messageToDisplayLine11.length === 18) {
           this.messageToDisplayLine11 += '</span>';
         }
         this.messageToDisplayLine11 += this.messageLine11[0];
         this.messageLine11 = this.messageLine11.substring(1);
         this.typeLine();
       }, this.TypingSpeed);
-    }else
+    } else
     if (this.messageLine12.length > 0) {
       setTimeout(() => {
-        if(this.messageToDisplayLine12.length === 9){
+        if(this.messageToDisplayLine12.length === 9) {
           this.messageToDisplayLine12 += '<span>';
-        }
-        else if(this.messageToDisplayLine12.length === 70){
+        } else if(this.messageToDisplayLine12.length === 70) {
           this.messageToDisplayLine12 += '</span>';
         }
         this.messageToDisplayLine12 += this.messageLine12[0];
         this.messageLine12 = this.messageLine12.substring(1);
         this.typeLine();
       }, this.TypingSpeed);
-    }else
+    } else
     if (this.messageLine13.length > 0) {
       setTimeout(() => {
-        if(this.messageToDisplayLine13.length === 26){
+        if(this.messageToDisplayLine13.length === 26) {
           this.messageToDisplayLine13 += '<span>';
-        }
-        else if(this.messageToDisplayLine13.length === 59){
+        } else if(this.messageToDisplayLine13.length === 59) {
           this.messageToDisplayLine13 += '</span>';
         }
         this.messageToDisplayLine13 += this.messageLine13[0];
         this.messageLine13 = this.messageLine13.substring(1);
         this.typeLine();
       }, this.TypingSpeed);
-    }
-    else{
+    } else {
+
     }
   }
 
