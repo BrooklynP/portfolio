@@ -7,7 +7,7 @@ import { Project } from 'src/app/models/project';
 export class ProjectsDataService {
   private readonly projects: Array<Project> = [
     {
-      index: 0,
+      index: 10,
       name: "Client Portal",
       summary: "A dashboard for staff at attend2IT, providing them with all the links they use on a day-to-day basis.",
       desc: `This was my first work for attend2IT as an entry level project to prove my ability.
@@ -15,11 +15,11 @@ export class ProjectsDataService {
       roles and individual users so that it can be personalised to only contain the links that are relevant to specific user,
       while staying easily maintainable for when new links become relevant.`,
       skills: ["Angular", "Typescript", "AWS s3 & Cloudfront", "Bootstrap", "REST APIs", "Keycloak JWT Authentication"],
-      screenshots: ["/assets/project-screenshots/clientportal-visual-screenshot.PNG"],
+      screenshots: ["/assets/project-screenshots/clientportal-1.png"],
       skillToFilterBy: "Angular"
     },
     {
-      index: 1,
+      index: 9,
       name: "Silent Auction",
       summary: "A Webapp for people hosting silent auctions, displaying current bids in a variety of fun combinations",
       desc: `I was tasked with redesigning the old display screens,
@@ -28,11 +28,11 @@ export class ProjectsDataService {
       as this left no wasted space and was visually pleasing while still displaying all the data.
       I had to work with the back-end developer to ensure the API would provide me with what I needed in my design.`,
       skills: ["Angular", "Typescript", "Material", "REST APIs", "Designed First In Adobe XD"],
-      screenshots: ["/assets/project-screenshots/silentauction-visual-screenshot.PNG"],
+      screenshots: ["/assets/project-screenshots/silentauction-1.png"],
       skillToFilterBy: "Angular"
     },
     {
-      index: 2,
+      index: 8,
       name: "People Couting",
       summary: `A dashboard for people counting devices, displaying summaries and graphs of data,
       such as total people in and busiest areas`,
@@ -42,11 +42,11 @@ export class ProjectsDataService {
       Due to the amount of data and requirement to constantly update and redraw the graphs,
       it was a priority to ensure performance efficient code was used.`,
       skills: ["Angular", "Typescript", "HighChartsJS", "AWS s3 & Cloudfront", "REST APIs", "Keycloak JWT Authentication"],
-      screenshots: ["/assets/project-screenshots/peoplecounter-visual-screenshot.jpg"],
+      screenshots: ["/assets/project-screenshots/peoplecounter-1.jpg"],
       skillToFilterBy: "Angular"
     },
     {
-      index: 3,
+      index: 7,
       name: "HyperView",
       summary: `A stream monitoring app built with electron and angular`,
       desc: `This app was designed to allow people to monitor mutliple streams recorders at once.
@@ -54,18 +54,18 @@ export class ProjectsDataService {
       Hyperdeck Studio, and Aja KI Pro through their respective APIs. It also analyses audio data to draw an audiometer on a canvas.
       I also produced the logo using Adobe Illustrator.`,
       skills: ["Electron", "Angular", "REST APIS", "Video JS"],
-      screenshots: ["/assets/project-screenshots/hyperview-visual-screenshot.png"],
+      screenshots: ["/assets/project-screenshots/hyperview-1.png"],
       skillToFilterBy: "Electron"
     },
     {
-      index: 4,
+      index: 13,
       name: "Travel Blog",
       summary: `This is a travel blog website storing blog posts in a mongoDB database`,
       desc: `I built this travel blog to learn more about back end developement. It allows post creation and viewing,
       and stores posts inside a mongoDB atlas database. I then built an node JS express api, that interacts with the database.
       With the angular front-end, this is my first full stack app.`,
       skills: ["Angular", "Typescript", "Node JS / Express", "Mongo DB", "REST APIs"],
-      screenshots: ["/assets/project-screenshots/blog-visual-screenshot.png"],
+      screenshots: ["/assets/project-screenshots/blog-1.png"],
       skillToFilterBy: "Angular"
     },
     {
@@ -76,7 +76,7 @@ export class ProjectsDataService {
       desc: `This was an assingment for the module "tools programming". It is a WPF app that lets the user open pictures and edit them,
       making use of many tools you might expect such as layering, various brush sizes and colours as well as shape drawing.`,
       skills: ["C#", "WPF", "XAML"],
-      screenshots: ["/assets/project-screenshots/spriteeditor-visual-screenshot.PNG"],
+      screenshots: ["/assets/project-screenshots/spriteeditor-1.png"],
       skillToFilterBy: "WPF"
     },
     {
@@ -89,29 +89,29 @@ export class ProjectsDataService {
       It uses randomly placed powerups and enemies as well as collision physics.
       The main menu uses custom made buttons that work with the mouse for ease of navigation`,
       skills: ["C++", "OpenGL"],
-      screenshots: ["/assets/project-screenshots/zombies-visual-screenshot.PNG"],
+      screenshots: ["/assets/project-screenshots/zombies-1.png"],
       skillToFilterBy: "C++"
     },
     {
-      index: 7,
+      index: 12,
       name: "Captive Portal",
       summary: "The default captive portal for the attend2IT network at events",
       link: "",
       desc: `This is the captive portal for the default network and is the first page users of the wifi will see.
       Created in pure javascript, HTML and CSS. It Uses media queries to ensure it is useable on both mobile and desktop.`,
       skills: ["Javascript", "CSS", "HTML", "Photoshop"],
-      screenshots: ["/assets/project-screenshots/captiveportal-visual-screenshot.png"],
+      screenshots: ["/assets/project-screenshots/captiveportal-1.png"],
       skillToFilterBy: "Angular"
     },
     {
-      index: 8,
+      index: 11,
       name: "Silent Auction",
       summary: "A wordpress to advertise the silent auction software I created",
       link: "https://silentauctiontexting.com/",
       desc: `Making use of plugins, custom CSS and Javascript, this website acts as an advert for the auction software.
       As an advert I made extra effort to ensure it was properly search engine optimised.`,
       skills: ["Wordpress", "HTML", "CSS", "Photoshop", "SEO"],
-      screenshots: ["/assets/project-screenshots/silentauction-wordpress-visual-screenshot.PNG"],
+      screenshots: ["/assets/project-screenshots/silentauction-wordpress-1.png"],
       skillToFilterBy: "Wordpress"
     },
     {
@@ -122,11 +122,11 @@ export class ProjectsDataService {
       githubLink: "https://github.com/BrooklynP/giphee",
       desc: `The goal of this app was to get a better understanding of how REST APIs work and how to use a http client.`,
       skills: ["Angular", "REST APIs"],
-      screenshots: ["/assets/project-screenshots/giphy-visual-screenshot.PNG"],
+      screenshots: ["/assets/project-screenshots/giphy-1.png"],
       skillToFilterBy: "Angular"
     },
     {
-      index: 10,
+      index: 2,
       name: "This Portfolio",
       summary: "A portfolio of some of the projects i'm most proud of",
       link: "brooklynpedley.co.uk",
@@ -134,14 +134,14 @@ export class ProjectsDataService {
       desc: `This is the website I use to display all of my best and latest work.
       I am constantly working on it as I learn new things to ensure it is the best website it can be.`,
       skills: ["Angular", "AWS lambda", "AWS API Gateway", "AWS SES", "AWS S3"],
-      screenshots: ["/assets/project-screenshots/portfolio-4.jpg",
-      "/assets/project-screenshots/portfolio-2.jpg",
-      "/assets/project-screenshots/portfolio-3.jpg",
-      "/assets/project-screenshots/portfolio-1.jpg", ],
+      screenshots: ["/assets/project-screenshots/portfolio-3.png",
+      "/assets/project-screenshots/portfolio-2.png",
+      "/assets/project-screenshots/portfolio-1.png",
+      "/assets/project-screenshots/portfolio-4.png", ],
       skillToFilterBy: "Angular"
     },
     {
-      index: 11,
+      index: 3,
       name: "Super Sumo",
       summary: "A 2D party game built in Unity",
       link: "",
@@ -149,11 +149,11 @@ export class ProjectsDataService {
       desc: `This is a 2D party game where 4 people use Xbox controllers to move around an arena and push their opponents out of the ring,
       to be the last sumo wrestler standing`,
       skills: ["Unity", "C#"],
-      screenshots: ["/assets/project-screenshots/supersumo-visual-screenshot.PNG"],
+      screenshots: ["/assets/project-screenshots/supersumo-1.png"],
       skillToFilterBy: "Unity"
     },
     {
-      index: 12,
+      index: 4,
       name: "Rogue RPG",
       summary: "A 3D rogue-like RPG game built in Unity",
       link: "",
@@ -163,20 +163,20 @@ export class ProjectsDataService {
       The enemies have AI to pathfind and to decide wether to fight or run away based on their vision, health etc.
       Once a level is cleared you move onto a new one, until you die!`,
       skills: ["Unity", "C#"],
-      screenshots: ["/assets/project-screenshots/rogue-visual-screenshot.PNG"],
+      screenshots: ["/assets/project-screenshots/rogue-1.png"],
       skillToFilterBy: "Unity"
     },
     {
-      index: 13,
+      index: 1,
       name: "Space Invaders",
       summary: "A faithful reproduction of the classic space invaders",
       link: "",
       githubLink: "https://github.com/BrooklynP/space-invaders/",
       desc: `a OpenGL based reproduction of space invaders. Including fully destructible shields, Stored high scores and more`,
       skills: ["C++", "OpenGL"],
-      screenshots: ["/assets/project-screenshots/spaceinvaders-1.PNG",
-      "/assets/project-screenshots/spaceinvaders-2.PNG",
-      "/assets/project-screenshots/spaceinvaders-3.PNG", ],
+      screenshots: ["/assets/project-screenshots/spaceinvaders-1.png",
+      "/assets/project-screenshots/spaceinvaders-2.png",
+      "/assets/project-screenshots/spaceinvaders-3.png", ],
       skillToFilterBy: "C++"
     },
   ];
@@ -184,7 +184,7 @@ export class ProjectsDataService {
   constructor() { }
 
   public getProjects(): Array<Project> {
-    return this.projects;
+    return this.projects.sort((projectA, projectB) =>  projectA.index - projectB.index);
   }
 
   public getProject(index: number): Project {
