@@ -13,6 +13,8 @@
 	}
 }
 
+
+
 .links{
 	display: flex;
 }
@@ -53,6 +55,7 @@ img{
 		box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 		border-radius: 4px;
 		padding: 8px;
+		padding-top: 16px;
 		margin: 16px 10px;
 
 		div{
@@ -62,6 +65,15 @@ img{
 			}
 		}
 	}
+	footer{
+		display: flex;
+		justify-content: center;
+	}
+	img{
+		max-height: 32px;
+		border: none;
+	}
+
 }
 
 .educationTile{

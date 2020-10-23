@@ -13,6 +13,8 @@ export class WorkTileComponent implements OnInit {
   @Input() duties: Array<string>;
   @Input() techStack: any;
   @Input() setID: string;
+  @Input() logoPath: string;
+
 
   public endDateProvided = true;
   public arrayOfLines = [];
@@ -20,6 +22,7 @@ export class WorkTileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.logoPath);
     if (!this.endDate) {
       this.endDate = new Date();
       this.endDateProvided = false;

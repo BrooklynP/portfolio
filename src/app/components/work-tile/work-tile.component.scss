@@ -3,13 +3,25 @@ p{
     margin: 0;
 }
 
+.row{
+    display: flex;
+}
+
+img{
+    max-height: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
 section{
     border: solid 1px black;
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
     border-radius: 4px;
     padding: 8px;
     margin: 16px 10px;
-    display: flex;
 }
 
 .numbers{
