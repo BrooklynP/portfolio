@@ -28,12 +28,6 @@ jobs:
         EMAIL_TOKEN: ${{ secrets.EMAILTOKEN }}
       run: echo "$EMAIL_TOKEN" | base64 -d > ./src/app/secrets/secret.service.ts
       
-    - name: SECRET
-      run: cat ./src/app/secrets/secret.service.ts
-    
-    - name: Test Step
-      run: echo "hello world"
-
     - name: npm install
       run: |
         npm i
