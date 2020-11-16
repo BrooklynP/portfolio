@@ -45,3 +45,4 @@ testem.log
 .DS_Store
 Thumbs.db
 src/app/secrets/secretDev.service.ts
+src/app/secrets/secret.service.ts
