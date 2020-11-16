@@ -43,6 +43,7 @@ export class ContactPageComponent implements OnInit {
         subject: `Portfolio Email Sent From ${this.emailSender}`,
         body: `Email Content: ${this.emailContent}`
       }, { headers: this.headers }).toPromise().then((response: any) => {
+        console.log(response);
         this.emailSender = '';
         this.emailContent = '';
         if (response.data.statusCode === 200) {

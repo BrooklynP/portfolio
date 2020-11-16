@@ -12,7 +12,6 @@ import { ProjectsPageComponent } from './pages/projects-page/projects-page.compo
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { SingleProjectPageComponent } from './pages/single-project-page/single-project-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { WorkTileComponent } from './components/work-tile/work-tile.component';
@@ -27,7 +26,6 @@ import { OtherExperienceTileComponent } from './components/other-experience-tile
     PageNotFoundComponent,
     AboutComponent,
     HeaderComponent,
-    ContactFormComponent,
     SingleProjectPageComponent,
     ContactPageComponent,
     WorkTileComponent,
