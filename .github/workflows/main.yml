@@ -23,10 +23,16 @@ jobs:
         node-version: ${{ matrix.node-version }}
         
     #Create email secrets file:
-    - name: create secrets.service.ts
+    - name: create secrets.service.ts {{ secrets.EMAILTOKEN }}
       env:
         EMAIL_TOKEN: ${{ secrets.EMAILTOKEN }}
       run: echo "$EMAIL_TOKEN" | base64 -d > ./src/app/secrets/secret.service.ts
+      
+    - name: SECRET
+      run: cat ./src/app/secrets/secret.service.ts
+    
+    - name: Test Step
+      run: echo "hello world"
 
     - name: npm install
       run: |
