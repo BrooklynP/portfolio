@@ -30,6 +30,9 @@ jobs:
       
     - name: SECRET
       run: cat ./src/app/secrets/secret.service.ts
+    
+    - name: Test Step
+      run: echo "hello world"
 
     - name: npm install
       run: |
