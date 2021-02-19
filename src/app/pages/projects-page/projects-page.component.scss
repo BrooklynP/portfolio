@@ -32,23 +32,27 @@
     background: none;
     border: none;
 
-    transition: 0.2s;
 
 }
 
-.project-card:hover button{
+.project-card:hover .project-card-title-container{
     background-color: rgba(0,0,0,0.8);
 }
 
 .project-card:hover .project-card-title{
-    opacity: 1;
+    visibility: visible;
+}
+
+.project-card-title-container{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .project-card-title{
-    opacity: 0;
-    position: relative;
+    visibility: hidden;
     margin: 0;
-    transition: 0.2s;
 }
 
 

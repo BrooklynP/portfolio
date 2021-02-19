@@ -22,14 +22,6 @@ export class ProjectsPageComponent implements OnInit {
   ngOnInit() {
   }
 
-  getProjectTitleYOffset(title) {
-    if (document.body.clientWidth > 800) {
-      return (-90 - (title.length > 14 ? 15 : 0)) + 'px';
-    } else {
-      return - (document.body.clientWidth * 0.2775) + 'px';
-    }
-  }
-
   getSelectedClass(skillName: string): boolean {
     return skillName === this.currentFilter;
   }

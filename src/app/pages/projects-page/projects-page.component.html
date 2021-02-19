@@ -9,8 +9,12 @@
 </div>
 
 <div class="project-cards-container">
-    <div class="project-card" *ngFor="let project of projects" [style.backgroundImage]="'url('+project.screenshots[0]+')'">
-        <button  (click)="selectProject(project.index)"></button>
-        <h1 class="project-card-title" [style.top]="getProjectTitleYOffset(project.name)">{{project.name}}</h1>
+    <div class="project-card" *ngFor="let project of projects; let i = index"
+        [style.backgroundImage]="'url('+project.screenshots[0]+')'">
+        <div (click)="selectProject(project.index)" class="project-card-title-container">
+            <h1 class="project-card-title">
+                {{project.name}}
+            </h1>
+        </div>
     </div>
 </div>

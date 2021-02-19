@@ -174,9 +174,9 @@ export class ProjectsDataService {
       githubLink: "https://github.com/BrooklynP/space-invaders/",
       desc: `a OpenGL based reproduction of space invaders. Including fully destructible shields, Stored high scores and more`,
       skills: ["C++", "OpenGL"],
-      screenshots: ["/assets/project-screenshots/spaceinvaders-1.png",
-      "/assets/project-screenshots/spaceinvaders-2.png",
-      "/assets/project-screenshots/spaceinvaders-3.png", ],
+      screenshots: ["/assets/project-screenshots/spaceinvaders-1.PNG",
+      "/assets/project-screenshots/spaceinvaders-2.PNG",
+      "/assets/project-screenshots/spaceinvaders-3.PNG", ],
       skillToFilterBy: "C++"
     },
   ];
