@@ -14,7 +14,7 @@
     </div>
 
     <h2>About This Project</h2>
-    <p>{{project.desc}}</p>
+    <p [innerHTML]="project.desc"></p>
 
     <h2>Tech And Skills</h2>
     <ul>
@@ -26,9 +26,4 @@
         <i class="fas fa-link"></i></a><br>
     <a *ngIf="project.githubLink" href="{{project.githubLink}}" title="This Project's GitHub">View Project Code
         <i class="fab fa-github"></i></a>
-
-    <h2>Let's Talk!</h2>
-    <p>Want to get in touch? Great! Just fill in a <a href="/contact">Contact Form</a> or email me direct at <a
-            href="mailto:brooklynpedley@gmail.com">brooklynpedley@gmail.com</a>
-    </p>
 </div>

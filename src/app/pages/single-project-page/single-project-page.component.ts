@@ -18,7 +18,7 @@ export class SingleProjectPageComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((param) => {
-      if (param.uid >= this.projectDataService.getProjectsLength()) {
+      if (param.uid >= this.projectDataService.getProjectsLength() + 1) {
         this.router.navigateByUrl('/projects');
 
       }
